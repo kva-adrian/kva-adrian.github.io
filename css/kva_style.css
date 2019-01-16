@@ -28,7 +28,6 @@
 }
 
 body {
-  padding-top: 140px;
   font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -44,12 +43,12 @@ section::after{
 }
 
 h1,h2,h3,h4,h5,h6 {
-	color: #4ba85d;
+	color: #0e600e;
     font-family: 'Assistant', sans-serif;
 }
 
 hr{
-	border-color: #4ba85d;
+	border-color: #0e600e;
 }
 ul, li {
   padding: 0;
@@ -57,24 +56,34 @@ ul, li {
   list-style: none;
 }
 
-ul li:before {
+section ul li:before {
   content: '';
   font-family: '';
   float: left;
   margin-left:0.5em;
   margin-right:0.5em;
-  color: #4ba85d;
+  color: #0e600e;
   text-align:center;
 }
 
 section ul li i{
-	color: #4ba85d;
+	color: #0e600e;
 	margin-right:0.5em;
 }
 
 .page-header{
-	border-bottom: 1px solid #4ba85d;
+	border-bottom: 1px solid #0e600e;
 }
+/*************  BLOCKQUOTE *************/
+blockquote{
+	border-left-color:#0e600e;
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+	border-right-color: #0e600e;
+}
+
 /*************  Buttons *************/
 a.btn{
 	text-transform: uppercase;
@@ -84,74 +93,53 @@ a.btn{
 
 .btn-default
 {
-    border:2px solid #4ba85d !important;
-    background-color: #4ba85d !important;
+    border:2px solid #0e600e !important;
+    background-color: #0e600e !important;
     color: #fff !important;
     padding: 16px;
 
 }
 .btn-default:hover
 {
-    border:2px solid #4ba85d !important;
+    border:2px solid #0e600e !important;
     background-color: #fff !important;
-    color: #4ba85d !important;
+    color: #0e600e !important;
 }
 
 .btn-primary
 {
-    border:2px solid #4ba85d !important;
+    border:2px solid #0e600e !important;
     background-color: #fff !important;
-    color: #4ba85d !important;
+    color: #0e600e !important;
     padding: 16px;
 }
 .btn-primary:hover
 {
-    border:2px solid #4ba85d !important;
-    background-color: #4ba85d !important;
+    border:2px solid #0e600e !important;
+    background-color: #0e600e !important;
     color: #fff !important;
 }
 
 .btn-search
 {
-    border:2px solid #fff !important;
-    background-color: #4ba85d !important;
+    border:1px solid #fff !important;
+    background-color: #0e600e !important;
     color: #fff !important;
-    padding: 16px;
 }
 .btn-search:hover
 {
-    border:2px solid #fff !important;
-    background-color: #4ba85d !important;
+    border:1px solid #fff !important;
+    background-color: #0e600e !important;
     color: #fff !important;
 }
-/************* 2. Navigation *************/
-.navbar-inverse.navbar-top ul > li {
-  display: inline-block;
+
+/************* 2 NAVIGATION *************/
+	/************* 2.1 Navigation - General *************/
+.navbar{
+	min-height:20px;
 }
 
-.navbar-inverse {
-    background-color: #4ba85d;
-	
-}
-
-.navbar-inverse .navbar-form{
-	border-color: #4ba85d;
-	box-shadow: none;
-}
-
-
-.navbar-inverse .navbar-nav > li > a{
-    color:#fff !important;
-	
-}
-
-.navbar-inverse #navbar2 .navbar-nav > li > a {
-	padding-top:10px;
-	padding-bottom:10px;
-	
-}
-	
-	/************* 2.1 Navigation - Logo Branding *************/
+	/************* 2.2 Navigation - Logo Branding *************/
 		/**********************************
 		Responsive navbar-brand image CSS
 		- Remove navbar-brand padding for Firefox bug workaround
@@ -164,107 +152,140 @@ a.btn{
   height: 100%;
   padding: 15px;
   width: auto;
-}
-	/************* 2.2 Navigation - Main Menu *************/
-.nav-main .navbar-brand {
-  height: 80px;
-}
+} 
 
-.nav-main .nav >li >a {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.nav-main .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
+.navbar-brand {
+  height: 80px;
 }
 	/************* 2.3 Navigation - Link Formatting *************/
 .navbar ul.nav li a {
-    color: #333;
+    color: #000;
     font-size: 16px;
     display: inline-block;
     vertical-align: middle;
 }
 .navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
-    color: #4ba85d !important;
+    color: #0e600e !important;
 }
 .navbar ul.nav li.active > a, .navbar ul.nav li.open > a {
-    color: #4ba85d !important;
+    color: #0e600e !important;
     background: transparent !important;
 }
  
-.navbar-form .input-group > .form-control
-{
+.navbar-form .input-group > .form-control{
     height: 25px;
 	border-radius:0px;
 	border:none;
 }
 
 .navbar-form .input-group .input-group-btn > .btn {
-/* .navbar-form .input-group > .input-group-btn{ */
 	height: 25px;
-	border-color:#ddd;
-	background-color:#4ba85d;
-	color:#fff;
+	border-color:#0e600e;
+	background-color:#0e600e;
+	color:#0e600e;
 	border-radius:0px;
 	padding-top:3px
- } 
+ }
  
- 	
-
-
- /************* 2.4 Navigation - Sub Menu Formatting *************/
- 	/*for submenu to open horizontal*/
-.dropdown {
-  position: static !important;
-  opacity:0.90;
+#searchbar .navbar-form{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+		/************* 2.4 Navigation - Navbar Inverse *************/
+.navbar-inverse{
+	background-color:#0e600e;
+	border-color:#0e600e;
 }
 
-.dropdown-menu {
-	border-radius: 0px;
-	width: 100%;
-	text-align: right;
-	padding:0px 20px;
-	left: 0;
-	right: 0;
+.navbar-inverse .navbar-form{
+	border-color: #0e600e;
 	box-shadow: none;
-	-webkit-box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:#fff !important;
 	
 }
-.dropdown-menu > li a{
-	font-size:14px !important;
+.navbar-inverse ul.nav li a:hover, 
+.navbar-inverse ul.nav li a:focus {
+    color: #fff !important;
 }
+.navbar-inverse #navbar-collapse-search .navbar-nav > li > a {
+	padding-top:8px;
+	padding-bottom:8px;
+	
+}
+	/************* 2.5 Navigation - Dropdown *************/
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+ }
+  
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
 
-.dropdown-menu > li {
-	display:inline-block;
-}
-.dropdown-menu > li > ul {
-  padding: 0;
-  margin: 0;
-}
-.dropdown-menu > li > ul > li {
-  list-style: none;
-}
-
-.dropdown-menu > li ul > li > a:hover,
-.dropdown-menu > li ul > li > a:focus {
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
   text-decoration: none;
 }
 
+.navbar-default .navbar-toggle{
+	border-color:#0e600e;
+}
+ /************* 2.6 Navigation - Dual Navbars for one fixed, one scrolls *************/
+ 
+#topNav {
+  margin-bottom:0;
+}
+
+#nav2 {
+  width: 100%;
+}
+
+#nav2.affix-top {
+  position: static;
+  
+}
+
+#nav2.affix {
+   position: fixed;
+   top: 0;
+   left: 0;
+  z-index: 9999 !important;
+   transition: all .6s ease-in-out;
+   -webkit-transition: all .6s ease-in-out;
+}
 
 /************* 3. Footer *************/
  .kva-footer {
     margin:0px auto;
     width:100%;
     height:50px;
-    background-color:#3E4043;
+    background-color:#000;
     float:left;
     padding-bottom:20px;
     position: relative;
     z-index: 10;
 }
 .kva-footer:after {
-    background-color: #4ba85d;
+    background-color: #0e600e;
     content: '';
     display: block;
     position: absolute;
@@ -287,8 +308,8 @@ a.btn{
 
 .kva-prefooter {
     width: 100%; 
-    min-height: 20px;
-    background-color: #3E4043;
+    min-height: 5px;
+    background-color: #e0bf0b;
     text-align: center;
 }
 /************* 4. Content *************/
@@ -408,7 +429,7 @@ right: 0;
 .greenbox
 {
     box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);
-	border: 2px solid #4ba85d !important;
+	border: 2px solid #0e600e !important;
 }
 
 
@@ -423,7 +444,7 @@ right: 0;
 }	
 
 .panel-kvaliteta{
-	border: 2px solid #4ba85d;
+	border: 2px solid #0e600e;
 	margin-top:0;
 	margin-bottom:0;
 	height:100%;
@@ -435,8 +456,8 @@ right: 0;
 }
 .panel-heading{
 	border-radius:0;
-	background-color:#4ba85d;
-	border-color:#4ba85d;
+	background-color:#0e600e;
+	border-color:#0e600e;
 }
 
 .panel-heading > .panel-title{
@@ -444,7 +465,7 @@ right: 0;
 }
 
 .panel ul li i {
-  color: #4ba85d;
+  color: #0e600e;
   margin-right:0.4em;
   margin-left:0.4em;
 }
@@ -462,7 +483,7 @@ right: 0;
 
 .iconbox-content
 {
-    color:#4ba85d !important;
+    color:#0e600e !important;
 }
 
 .iconbox-content i 
@@ -470,7 +491,7 @@ right: 0;
     margin-top:5%;
 }
 .iconbox-content i.fa-border{
-	border-color:#4ba85d;
+	border-color:#0e600e;
 }
 
 .iconbox-content div span
@@ -503,7 +524,17 @@ right: 0;
     text-align: center;
 }
 /************* TABLET - PORTRAIT or SMALLER SCREENS *************/
-
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+  #navbar {
+    text-align: center;
+  }
+}  
 @media(min-width: 768px) and (max-width: 1024px){
 
 /************* 2. Tablets - Navigation *************/
@@ -513,7 +544,6 @@ right: 0;
 	padding-left: 5px;
 	padding-right:5px;
 }
-
 
 /*************  4. Tablet - Content *************/
 
@@ -570,7 +600,7 @@ right: 0;
 }	
 
 .panel-kvaliteta{
-	border: 2px solid #4ba85d;
+	border: 2px solid #0e600e;
 	margin-top:0;
 	margin-bottom:0;
 	height:100%;
@@ -612,34 +642,46 @@ body {
 }
 /************* 2. Mobile - Navigation *************/
 	/************* 2.2 Navigation - Main Menu *************/
-.nav-main .nav >li >a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+.navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #000;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
 
-.navbar-inverse #searchbar{
-	width:90%;
-	
-}
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
 
-.navbar-inverse .navbar-form{
-	margin: 1px;
-	padding:2px 3px;
-
-}
-
-.navbar-inverse #navbar2 .navbar-nav > li > a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
- /************* 2.4 Navigation - Sub Menu Formatting *************/
- 	/*for submenu to open horizontal*/
-
-.dropdown-menu > li {
-  width:100%;
-  text-align:left;
-}
 /*************  4. Mobile - Content *************/
 
 		/*************  4.1 MOBILE - Carousel *************/
@@ -734,7 +776,7 @@ box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
 }	
 
 .panel-kvaliteta{
-	border: 2px solid #4ba85d;
+	border: 2px solid #0e600e;
 	margin-top:0;
 	margin-bottom:0;
 	height:100%;

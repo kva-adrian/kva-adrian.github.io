@@ -31,123 +31,139 @@
 
   <body>
 <header>
-	<nav class="navbar-fixed-top">
-		<div class="navbar-inverse navbar-static-top navbar-top">
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse" id="navbar2">
-					<ul class="nav navbar-nav pull-right text-center">
-						<li id="searchbar">
-							<form class="navbar-form" role="search">
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Search">
-									<div class="input-group-btn">
-										<button class="btn btn-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-									</div>
+<div class="navbar navbar-inverse navbar-static-top hidden-xs" id="topNav">
+    <div class="container-fluid">
+		<div class="collapse navbar-collapse " id="navbar-collapse-search">
+			<ul class="nav navbar-nav pull-right text-center">
+				<!--SEARCHBAR-->
+				<li id="searchbar">
+					<form class="navbar-form" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<div class="input-group-btn">
+								<button class="btn btn-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>
+				</li>
+				<!--SOCIAL MEDIA ICONS-->
+				<li>
+					<a href="MAILTO:info@kvaliteta.in" target="_blank" title="Email" class="email">
+						<i class="fas fa-envelope" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.linkedin.com/company/2436843" target="_blank" title="Linkedin" class="linkedin">
+						<i class="fab fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://twitter.com/KvalitetaIndia" target="_blank" title="Twitter" class="twitter">
+					<i class="fab fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.facebook.com/KvalitetaIndia" target="_blank" title="Facebook" class="facebook">
+					<i class="fab fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UCZxSHgTgV3It7kuVhIulmtw" target="_blank" title="youtube" class="youtube">
+					<i class="fab fa-youtube" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" id="nav2">
+    <div class="container-fluid">
+				 <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main, #navbar-collapse-search">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand" href="#"><img class="img-responsive" alt="Kvaliteta" src="images/logo.png"></a>
+            </div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+				<!--SEARCHBAR only visible in mobile view-->
+					<li id="searchbar" class="visible-xs">
+						<form class="navbar-form" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="input-group-btn">
+									<button class="btn btn-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
 								</div>
-							</form>
-						</li>
-						<li>
-							<a href="MAILTO:info@kvaliteta.in" target="_blank" title="Email" class="email">
-								<i class="fas fa-envelope" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="http://www.linkedin.com/company/2436843" target="_blank" title="Linkedin" class="linkedin">
-								<i class="fab fa-linkedin" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="http://twitter.com/KvalitetaIndia" target="_blank" title="Twitter" class="twitter">
-							<i class="fab fa-twitter" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="http://www.facebook.com/KvalitetaIndia" target="_blank" title="Facebook" class="facebook">
-							<i class="fab fa-facebook" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.youtube.com/channel/UCZxSHgTgV3It7kuVhIulmtw" target="_blank" title="youtube" class="youtube">
-							<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-		</div>
-		<div class="nav-main">
-		<div class="navbar navbar-default navbar-static-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar, #navbar2" aria-expanded="false">
-					  <span class="sr-only">Toggle navigation</span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><img alt="Kvaliteta" class="img-responsive" src="images/logo.png"></a>
-				</div>
-
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="nav navbar-nav navbar-right">
-						<!--SDAAS DROPDOWN-->
-						<li class="nav-item dropdown">
-							<a href="sdaas.html">SDaaS</a><span class="caret dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span>
-								<ul class="dropdown-menu" role="sdaasMenu">
-									<li><a href="sdaas.html#kiteframework">KITE FRAMEWORK</a></li>
-									<li><a href="sdaas.html#cid">CiD</a></li>
-									<li><a href="sdaas.html#deliverymodel">DELIVERY MODEL</a></li>
-									<li><a href="sdaas.html#usecases">USE CASES</a></li>
-								 </ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a href="enterpriseit.html">ENTERPRISE-IT</a><span class="caret dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span>
-								<ul class="dropdown-menu" role="enitMenu">
-									<li><a href="enterpriseit.html#privateClouds">PRIVATE CLOUDS</a></li>
-									<li><a href="enterpriseit.html#paas">PLATFORM-AS-A-SERVICE</a></li>
-									<li><a href="enterpriseit.html#orchestration">ORCHESTRATION</a></li>
-									<li><a href="enterpriseit.html#dcim">DATA CENTER INFRASTRUCTURE MANAGEMENT</a></li>
-									<li><a href="enterpriseit.html#ent-services">SERVICES</a></li>
-								</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a href="serviceprovider.html">SERVICE PROVIDER I.T.</a><span class="caret dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span>
-								<ul class="dropdown-menu" role="spitMenu">
-									<li><a href="serviceprovider.html#IoE">INTERNET OF EVERYTHING</a></li>
-									<li><a href="serviceprovider.html#mobility">MOBILITY</a></li>
-									<li><a href="serviceprovider.html#Wired">WIRED</a></li>
-									<li><a href="serviceprovider.html#Security">SECURITY</a></li>
-									<li><a href="serviceprovider.html#OSSBSS">BUSINESS SUPPORT SYSTEM</a></li>
-									<li><a href="serviceprovider.html#services">SERVICES</a></li>
-								</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a href="partners.html">PARTNERING</a><span class="caret dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span>
-								<ul class="dropdown-menu" role="partneringMenu">
-									<li><a href="partnering.html#PartnershipModels">PARTNERSHIP MODELS</a></li>
-									<li><a href="partnering.html#OEMODM">ODM/OEM PARTNERS</a></li>
-									<li><a href="partnering.html#serviceDeliveryPartners">SERVICE DELIVERY PARTNERS</a></li>
-								</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a href="aboutus.html">ABOUT US</a><span class="caret dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span>
-								<ul class="dropdown-menu" role="aboutusMenu">
-									<li><a href="aboutus.html#ContactUs">CONTACT US</a></li>
-									<li><a href="aboutus.html#IndustrySolutions">INDUSTRY SOLUTIONS</a></li>
-									<li><a href="aboutus.html#TechnologyAreas">TECHNOLOGY AREAS</a></li>
-									<li><a href="aboutus.html#ValueProposition">VALUE PROPOSITION</a></li>
-									<li><a href="aboutus.html#VisionStatements">VISION STATEMENTS</a></li>
-									<li><a href="aboutus.html#Accreditation">ACCREDITATION & MEMBERSHIPS</a></li>
-								</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		</div>
-
-	</nav>
+							</div>
+						</form>
+					</li>
+				<!--SDAAS DROPDOWN-->
+                    <li class="dropdown">
+                     <a href="sdaas.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">SDAAS <b class="caret"></b></a>
+					 <a href="sdaas.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">SDAAS <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="sdaas.html#kiteframework">KITE FRAMEWORK</a></li>
+							<li><a href="sdaas.html#cid">CiD</a></li>
+							<li><a href="sdaas.html#deliverymodel">DELIVERY MODEL</a></li>
+							<li><a href="sdaas.html#usecases">USE CASES</a></li>
+                        </ul>
+                    </li>
+					<!--ENT-IT DROPDOWN-->
+                    <li class="dropdown">
+                      <a href="enterpriseit.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">ENTERPRISE-IT <b class="caret"></b></a>
+					  <a href="enterpriseit.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">ENTERPRISE-IT <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="enterpriseit.html#privateClouds">PRIVATE CLOUDS</a></li>
+							<li><a href="enterpriseit.html#paas">PLATFORM AS A SERVICE</a></li>
+							<li><a href="enterpriseit.html#orchestration">ORCHESTRATION</a></li>
+							<li><a href="enterpriseit.html#dcim">DATA CENTER INFRASTRUCTURE MANAGEMENT</a></li>
+							<li><a href="enterpriseit.html#ent-services">SERVICES</a></li>
+                        </ul>
+                    </li>
+					<!--SP-IT DROPDOWN-->
+					<li class="dropdown">
+                      <a href="serviceprovider.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">SERVICE PROVIDER-IT <b class="caret"></b></a>
+					  <a href="serviceprovider.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">SERVICE PROVIDER-IT <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="serviceprovider.html#IoE">INTERNET OF EVERYTHING</a></li>
+							<li><a href="serviceprovider.html#mobility">MOBILITY</a></li>
+							<li><a href="serviceprovider.html#Wired">WIRED</a></li>
+							<li><a href="serviceprovider.html#Security">SECURITY</a></li>
+							<li><a href="serviceprovider.html#OSSBSS">BUSINESS SUPPORT SYSTEM</a></li>
+							<li><a href="serviceprovider.html#services">SERVICES</a></li>
+                        </ul>
+                    </li>
+					<!--PARTNERING DROPDOWN-->
+					<li class="dropdown">
+                      <a href="partnering.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">PARTNERING <b class="caret"></b></a>
+					  <a href="partnering.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">PARTNERING <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="partnering.html#PartnershipModels">PARTNERSHIP MODELS</a></li>
+							<li><a href="partnering.html#OEMODM">ODM/OEM PARTNERS</a></li>
+							<li><a href="partnering.html#serviceDeliveryPartners">SERVICE DELIVERY PARTNERS</a></li>
+                        </ul>
+                    </li>
+					<!--ABOUT US DROPDOWN-->
+					<li class="dropdown">
+                      <a href="aboutus.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">ABOUT US <b class="caret"></b></a>
+					  <a href="aboutus.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">ABOUT US <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="aboutus.html#ContactUs">CONTACT US</a></li>
+							<li><a href="aboutus.html#IndustrySolutions">INDUSTRY SOLUTIONS</a></li>
+							<li><a href="aboutus.html#TechnologyAreas">TECHNOLOGY AREAS</a></li>
+							<li><a href="aboutus.html#ValueProposition">VALUE PROPOSITION</a></li>
+							<li><a href="aboutus.html#VisionStatements">VISION STATEMENTS</a></li>
+							<li><a href="aboutus.html#Accreditation">ACCREDITATION & MEMBERSHIPS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+		</div><!--/.container -->
+</nav><!--/.navbar -->
 </header>
 
     
