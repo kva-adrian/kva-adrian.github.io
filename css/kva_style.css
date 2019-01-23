@@ -1,50 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i'); */
-
-/* assistant-700 - latin */
-@font-face {
-  font-family: 'Assistant';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../external/fonts/assistant-v2-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Assistant Bold'), local('Assistant-Bold'),
-       url('../external/fonts/assistant-v2-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../external/fonts/assistant-v2-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../external/fonts/assistant-v2-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../external/fonts/assistant-v2-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../external/fonts/assistant-v2-latin-700.svg#Assistant') format('svg'); /* Legacy iOS */
-}
-
-/* roboto-regular - latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  src: url('../external/fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../external/fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../external/fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../external/fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../external/fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../external/fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
-}
-
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i');
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .container {
 	width:95%;
 }
 
-section {
-	margin-bottom: 25px;
-}
-section::after{
-	padding-bottom:25px;
-	
-}
-
 h1,h2,h3,h4,h5,h6 {
 	color: #0e600e;
-    font-family: 'Assistant', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
 hr{
@@ -55,6 +20,12 @@ ul, li {
   margin: 0;
   list-style: none;
 }
+section {
+	padding-top:7%;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
 
 section ul li:before {
   content: '';
@@ -62,7 +33,6 @@ section ul li:before {
   float: left;
   margin-left:0.5em;
   margin-right:0.5em;
-  color: #0e600e;
   text-align:center;
 }
 
@@ -133,6 +103,13 @@ a.btn{
     color: #fff !important;
 }
 
+/*************  THUMBNAIL *************/
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail:active{
+	border-color:#0e600e; 
+}
+
 /************* 2 NAVIGATION *************/
 	/************* 2.1 Navigation - General *************/
 .navbar{
@@ -146,23 +123,22 @@ a.btn{
 		- add 100% height and width auto ... similar to how bootstrap img-responsive class works
 		***********************************/
 .navbar-brand {
-  padding: 0px;
+	padding: 0px;
+	height:auto;
 }
 .navbar-brand>img {
   height: 100%;
-  padding: 15px;
+  padding: 8px 15px;
   width: auto;
 } 
 
-.navbar-brand {
-  height: 80px;
-}
 	/************* 2.3 Navigation - Link Formatting *************/
 .navbar ul.nav li a {
     color: #000;
     font-size: 16px;
     display: inline-block;
     vertical-align: middle;
+	padding-bottom:5px
 }
 .navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
     color: #0e600e !important;
@@ -171,6 +147,22 @@ a.btn{
     color: #0e600e !important;
     background: transparent !important;
 }
+
+		/************* 2.4 Navigation - Sub Menu Pills Formatting *************/
+.navbar ul#kva-menutabs.nav  li a {
+    font-size: 14px;
+}
+.navbar ul#kva-menutabs.nav li a:hover, .navbar ul#kva-menutabs.nav li a:focus {
+    color: #0e600e !important;
+}
+.navbar ul#kva-menutabs.nav li.active > a, .navbar ul#kva-menutabs.nav li.open > a {
+    color: #0e600e !important;
+    background: #000 !important;
+}
+#kva-menutabs.nav > li > a{
+	padding:8px 10px;
+}
+		/************* 2.5 Navigation - Search Bar/Forms *************/
  
 .navbar-form .input-group > .form-control{
     height: 25px;
@@ -191,7 +183,7 @@ a.btn{
 	margin-top:5px;
 	margin-bottom:5px;
 }
-		/************* 2.4 Navigation - Navbar Inverse *************/
+		/************* 2.6 Navigation - Navbar Inverse *************/
 .navbar-inverse{
 	background-color:#0e600e;
 	border-color:#0e600e;
@@ -215,7 +207,7 @@ a.btn{
 	padding-bottom:8px;
 	
 }
-	/************* 2.5 Navigation - Dropdown *************/
+	/************* 2.7 Navigation - Dropdown *************/
 .dropdown-submenu {
     position:relative;
 }
@@ -249,7 +241,8 @@ a.btn{
 .navbar-default .navbar-toggle{
 	border-color:#0e600e;
 }
- /************* 2.6 Navigation - Dual Navbars for one fixed, one scrolls *************/
+
+	/************* 2.8 Navigation - Dual Navbars for one fixed, one scrolls *************/
  
 #topNav {
   margin-bottom:0;
@@ -325,26 +318,19 @@ a.btn{
     left:0;
 }
 
+.carousel{
+	margin-top:20px;
+}
 .carousel-caption {
     text-shadow: none;
     padding-bottom: 14%;
     font-size: 3em;
 }
 		/************* 4.2 -  Landing *************/
-/*	.landing .jumbotron:before
+.landing
 {
-	content: '';
-	position: absolute;
-	width:100%;
-	height:100%;
- 	top: 0;
-right: 0;
-	bottom: 0;
-	left: 0; 
-	background-image: linear-gradient(to bottom right,#000000,#000000);
-	opacity: .5; 
-
-}*/
+	padding-top:30px;
+}
 
 
  .jumbotron{
@@ -638,7 +624,11 @@ right: 0;
 @media(min-width: 321px) and (max-width: 767px) {
 
 body {
-  padding-top: 100px;
+  padding-top: 0;
+}
+
+section {
+	padding-top:20%;
 }
 /************* 2. Mobile - Navigation *************/
 	/************* 2.2 Navigation - Main Menu *************/
@@ -680,6 +670,10 @@ body {
    }
    li.dropdown.open {
     border: 0px solid red;
+   }
+   
+   .navbar ul.nav li a.visible-xs{
+	   display:inline-block !important;
    }
 
 /*************  4. Mobile - Content *************/
