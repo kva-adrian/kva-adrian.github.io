@@ -1,10 +1,9 @@
 /* affix the 2nd navbar after scroll past first navbar */
-/* $('#nav2').affix({
+/*  $('#nav2').affix({
       offset: {
         top: 25
       }
 });	 */
-
 $(function() {
     $('header').height($("#nav2").height());
     
