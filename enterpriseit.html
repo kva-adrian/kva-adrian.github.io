@@ -76,20 +76,21 @@
 		</div>
 	</div>
 </div>
-<nav class="navbar navbar-default navbar-static-top" role="navigation" id="nav2">
-    <div class="container-fluid">
-				 <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main, #navbar-collapse-search">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            <a class="navbar-brand" href="#"><img class="img-responsive" alt="Kvaliteta" src="images/logo.png"></a>
-            </div>
+<nav>
+	<div class="navbar navbar-default navbar-static-top" role="navigation" id="nav2">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main, #navbar-collapse-search">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Kvaliteta" src="images/logo.png"></a>
+			</div>
 
-			<div class="collapse navbar-collapse" id="navbar-collapse-main">
-                <ul class="nav navbar-nav navbar-right">
+			<div class="collapse navbar-collapse navbar-right" id="navbar-collapse-main">
+                <ul class="nav navbar-nav">
 				<!--SEARCHBAR only visible in mobile view-->
 					<li id="searchbar" class="visible-xs">
 						<form class="navbar-form" role="search">
@@ -104,7 +105,7 @@
 				<!--SDAAS DROPDOWN-->
                     <li class="dropdown">
                      <a href="sdaas.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">SDAAS <b class="caret"></b></a>
-					 <a href="sdaas.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">SDAAS <b class="caret"></b></a>
+					 <a class="visible-xs" href="sdaas.html">SDAAS</a><a class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i class="fas fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
 							<li><a href="sdaas.html#kiteframework">KITE FRAMEWORK</a></li>
 							<li><a href="sdaas.html#cid">CiD</a></li>
@@ -113,21 +114,22 @@
                         </ul>
                     </li>
 					<!--ENT-IT DROPDOWN-->
-                    <li class="dropdown">
-                      <a href="enterpriseit.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">ENTERPRISE-IT <b class="caret"></b></a>
-					  <a href="enterpriseit.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">ENTERPRISE-IT <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+					<li class="dropdown active">
+						 <a href="enterpriseit.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">ENTERPRISE-IT <b class="caret"></b></a>
+						 <a class="visible-xs" href="enterpriseit.html">ENTERPRISE-IT</a><a class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i class="fas fa-angle-down"></i></a>
+						 <ul class="dropdown-menu hidden-lg hidden-md hidden-sm"> 
 							<li><a href="enterpriseit.html#privateClouds">PRIVATE CLOUDS</a></li>
-							<li><a href="enterpriseit.html#paas">PLATFORM AS A SERVICE</a></li>
+							<li><a href="enterpriseit.html#paas">PLATFORM-AS-A SERVICE</a></li>
 							<li><a href="enterpriseit.html#orchestration">ORCHESTRATION</a></li>
-							<li><a href="enterpriseit.html#dcim">DATA CENTER INFRASTRUCTURE MANAGEMENT</a></li>
+							<li><a href="enterpriseit.html#dcim">DATA CENTERS</a></li>
 							<li><a href="enterpriseit.html#ent-services">SERVICES</a></li>
-                        </ul>
+						</ul>
                     </li>
+						
 					<!--SP-IT DROPDOWN-->
 					<li class="dropdown">
                       <a href="serviceprovider.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">SERVICE PROVIDER-IT <b class="caret"></b></a>
-					  <a href="serviceprovider.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">SERVICE PROVIDER-IT <b class="caret"></b></a>
+						 <a class="visible-xs" href="serviceprovider.html">SERVICE PROVIDER-IT</a><a class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i class="fas fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
 							<li><a href="serviceprovider.html#IoE">INTERNET OF EVERYTHING</a></li>
 							<li><a href="serviceprovider.html#mobility">MOBILITY</a></li>
@@ -139,8 +141,8 @@
                     </li>
 					<!--PARTNERING DROPDOWN-->
 					<li class="dropdown">
-                      <a href="partnering.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">PARTNERING <b class="caret"></b></a>
-					  <a href="partnering.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">PARTNERING <b class="caret"></b></a>
+						<a href="partnering.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">PARTNERING <b class="caret"></b></a>
+						<a href="partnering.html" class="visible-xs" >PARTNERING</a><a class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i class="fas fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
 							<li><a href="partnering.html#PartnershipModels">PARTNERSHIP MODELS</a></li>
 							<li><a href="partnering.html#OEMODM">ODM/OEM PARTNERS</a></li>
@@ -150,7 +152,7 @@
 					<!--ABOUT US DROPDOWN-->
 					<li class="dropdown">
                       <a href="aboutus.html" class="dropdown-toggle disabled hidden-xs" data-toggle="dropdown">ABOUT US <b class="caret"></b></a>
-					  <a href="aboutus.html" class="dropdown-toggle visible-xs" data-toggle="dropdown">ABOUT US <b class="caret"></b></a>
+						<a href="aboutus.html" class="visible-xs" >ABOUT US</a><a class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i class="fas fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
 							<li><a href="aboutus.html#ContactUs">CONTACT US</a></li>
 							<li><a href="aboutus.html#IndustrySolutions">INDUSTRY SOLUTIONS</a></li>
@@ -162,7 +164,19 @@
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
-		</div><!--/.container -->
+		</div><!--/.container-fluid -->
+		</div>
+		<div class="navbar navbar-default hidden-xs" id="nav-lower">
+			<div class="container-fluid">
+				<ul class="nav nav-pills nav-justified" id="kva-menutabs"> 
+					<li><a href="#privateClouds">PRIVATE CLOUDS</a></li>
+					<li><a href="#paas">PLATFORM-AS-A SERVICE</a></li>
+					<li><a href="#orchestration">ORCHESTRATION</a></li>
+					<li><a href="#dcim">DATA CENTERS</a></li>
+					<li><a href="#ent-services">SERVICES</a></li>
+				</ul>
+			</div>
+		</div>
 </nav><!--/.navbar -->
 </header>
 

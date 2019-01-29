@@ -128,7 +128,7 @@ a.thumbnail:active{
 }
 .navbar-brand>img {
   height: 100%;
-  padding: 8px 15px;
+  padding: 5px 15px;
   width: auto;
 } 
 
@@ -136,9 +136,9 @@ a.thumbnail:active{
 .navbar ul.nav li a {
     color: #000;
     font-size: 16px;
-    display: inline-block;
     vertical-align: middle;
-	padding-bottom:5px
+	padding-bottom:5px;
+	padding-top:20px;
 }
 .navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
     color: #0e600e !important;
@@ -149,19 +149,22 @@ a.thumbnail:active{
 }
 
 		/************* 2.4 Navigation - Sub Menu Pills Formatting *************/
-.navbar ul#kva-menutabs.nav  li a {
+
+nav ul#kva-menutabs.nav  li a {
     font-size: 14px;
+	color:inherit;
+	padding:8px 10px;
 }
-.navbar ul#kva-menutabs.nav li a:hover, .navbar ul#kva-menutabs.nav li a:focus {
+nav ul#kva-menutabs.nav li a:hover, nav ul#kva-menutabs.nav li a:focus {
     color: #0e600e !important;
 }
-.navbar ul#kva-menutabs.nav li.active > a, .navbar ul#kva-menutabs.nav li.open > a {
+nav ul#kva-menutabs.nav li.active > a, nav ul#kva-menutabs.nav li.open > a {
     color: #0e600e !important;
     background: #000 !important;
 }
-#kva-menutabs.nav > li > a{
-	padding:8px 10px;
-}
+/* nav ul#kva-menutabs.nav > li > a{
+	
+} */
 		/************* 2.5 Navigation - Search Bar/Forms *************/
  
 .navbar-form .input-group > .form-control{
@@ -244,28 +247,32 @@ a.thumbnail:active{
 
 	/************* 2.8 Navigation - Dual Navbars for one fixed, one scrolls *************/
  
-#topNav {
+
+ #topNav, #nav2 {
   margin-bottom:0;
 }
 
-#nav2 {
+nav {
   width: 100%;
 }
 
-#nav2.affix-top {
+nav.affix-top {
   position: static;
   
 }
 
-#nav2.affix {
-   position: fixed;
-   top: 0;
-   left: 0;
+nav.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9999 !important;
-   transition: all .6s ease-in-out;
-   -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
 }
 
+#nav-lower {
+  width: 100%;
+}
 /************* 3. Footer *************/
  .kva-footer {
     margin:0px auto;
