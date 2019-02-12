@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i');
+body {
+  font-family: 'Fira Sans', sans-serif;
+ 
+}
+.container {
+	width:95%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #0e600e;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+hr{
+	border-color: #0e600e;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section {
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+section ul li:before {
+  content: '';
+  font-family: '';
+  float: left;
+  margin-left:0.5em;
+  margin-right:0.5em;
+  text-align:center;
+}
+
+section.top-space {
+	padding-top:4%;
+}
+
+
+section ul li i{
+	color: #0e600e;
+	margin-right:0.5em;
+}
+
+.page-header{
+	border-bottom: 1px solid #0e600e;
+}
+/*************  BLOCKQUOTE *************/
+blockquote{
+	border-left-color:#0e600e;
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+	border-right-color: #0e600e;
+}
+
+/*************  Buttons *************/
+a.btn{
+	text-transform: uppercase;
+	border-radius: 0;
+    font-weight: bold;
+}
+
+.btn-default
+{
+    border:2px solid #0e600e !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+    padding: 16px;
+
+}
+.btn-default:hover
+{
+    border:2px solid #0e600e !important;
+    background-color: #fff !important;
+    color: #0e600e !important;
+}
+
+.btn-primary
+{
+    border:2px solid #0e600e !important;
+    background-color: #fff !important;
+    color: #0e600e !important;
+    padding: 16px;
+}
+.btn-primary:hover
+{
+    border:2px solid #0e600e !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+}
+
+.btn-search
+{
+    border:1px solid #fff !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+}
+.btn-search:hover
+{
+    border:1px solid #fff !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+}
+
+/*************  THUMBNAIL *************/
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail:active{
+	border-color:#0e600e; 
+}
+
+/************* 2 NAVIGATION *************/
+	/************* 2.1 Navigation - General *************/
+.navbar{
+	min-height:20px;
+}
+
+
+
+	/************* 2.2 Navigation - Logo Branding *************/
+		/**********************************
+		Responsive navbar-brand image CSS
+		- Remove navbar-brand padding for Firefox bug workaround
+		- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+		***********************************/
+.navbar-brand {
+	padding: 0px;
+	height:auto;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 5px 15px;
+  width: auto;
+} 
+
+	/************* 2.3 Navigation - Link Formatting *************/
+
+.navbar ul.nav li a {
+    color: #000;
+    font-size: 16px;
+    vertical-align: middle;
+	padding-bottom:5px;
+	padding-top:20px;
+}
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
+    color: #0e600e !important;
+}
+.navbar ul.nav li.active > a, .navbar ul.nav li.open > a {
+    color: #0e600e !important;
+    background: transparent !important;
+}
+
+		/************* 2.4 Navigation - Sub Menu Pills Formatting *************/
+.nav-pills > li > a{
+	border-radius:0;
+}
+
+nav ul#kva-menutabs.nav  li a {
+    font-size: 14px;
+	color:inherit;
+	padding:8px 10px;
+}
+nav ul#kva-menutabs.nav li a:hover, nav ul#kva-menutabs.nav li a:focus {
+    color: #0e600e !important;
+}
+nav ul#kva-menutabs.nav li.active > a, nav ul#kva-menutabs.nav li.open > a {
+    color: #fff !important;
+    background: #0e600e !important;
+}
+
+		/************* 2.5 Navigation - Search Bar/Forms *************/
+ 
+.navbar-form .input-group > .form-control{
+    height: 25px;
+	border-radius:0px;
+	border:none;
+}
+
+.navbar-form .input-group .input-group-btn > .btn {
+	height: 25px;
+	border-color:#0e600e;
+	background-color:#0e600e;
+	color:#0e600e;
+	border-radius:0px;
+	padding-top:3px
+ }
+ 
+#searchbar .navbar-form{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+		/************* 2.6 Navigation - Navbar Inverse *************/
+.navbar-inverse{
+	background-color:#0e600e;
+	border-color:#0e600e;
+}
+
+.navbar-inverse#topNav{
+	border-bottom:3px solid #e0bf0b;
+
+}
+
+.navbar-inverse .navbar-form{
+	border-color: #0e600e;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:#fff !important;
+	
+}
+.navbar-inverse ul.nav li a:hover, 
+.navbar-inverse ul.nav li a:focus {
+    color: #fff !important;
+}
+.navbar-inverse #navbar-collapse-search .navbar-nav > li > a {
+	padding-top:8px;
+	padding-bottom:8px;
+	
+}
+	/************* 2.7 Navigation - Dropdown *************/
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;
+   margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;
+   -moz-border-radius:0 6px 6px 6px;
+   border-radius:0 6px 6px 6px;
+   z-index:1000;
+ }
+  
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-toggle{
+	border-color:#0e600e;
+}
+
+	/************* 2.8 Navigation - Dual Navbars for one fixed, one scrolls *************/
+ 
+
+ #topNav, #nav2 {
+  margin-bottom:0;
+}
+
+nav {
+  width: 100%;
+}
+
+nav.affix-top {
+  position: absolute;
+}
+
+nav.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+}
+
+#nav-lower {
+  width: 100%;
+}
+/************* 3. Footer *************/
+ .kva-footer {
+    margin:0px auto;
+    width:100%;
+    height:50px;
+    background-color:#000;
+    float:left;
+    padding-bottom:20px;
+    position: relative;
+    z-index: 10;
+}
+.kva-footer:after {
+    background-color: #0e600e;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.kva-footer p{
+    text-align:center;
+	margin-top: 5px;
+    color: #fff; 
+    font-size: 14px;
+    word-spacing: 4px;
+    font-weight: bold;
+    font-family: 'Assistant', sans-serif;
+}
+
+.kva-prefooter {
+    width: 100%; 
+    min-height: 5px;
+    background-color: #D8B446; /* #e0bf0b - Cid Logo yellow*/
+    text-align: center;
+}
+/************* 4. Content *************/
+			/************* 4.1 Carousel *************/
+ .overlay {
+    background-color: rgba(0,0,0,0.4);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	top:0;
+    left:0;
+}
+
+.carousel{
+	margin-top:20px;
+	z-index: 0
+}
+.carousel-caption {
+    text-shadow: none;
+    padding-bottom: 14%;
+    font-size: 3em;
+}
+		/************* 4.2 -  Landing *************/
+.landing
+{
+	padding-top:30px;
+}
+
+
+ .jumbotron{
+	margin-bottom: 0px;
+	border-radius:0 !important;
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    top:0;
+    left:0;
+	padding-top:15%;
+	padding-bottom:15%;
+	background-position: center;
+	background-repeat: no-repeat;
+	color:white;
+
+}
+
+.minimum-padding .jumbotron{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+.landing .jumbotron h1,
+.landing .jumbotron h2,
+.landing .jumbotron h3,
+.landing .jumbotron p,
+.landing .jumbotron span{
+	color:#fff;
+}
+.landing .jumbotron p,
+.landing .jumbotron span{
+	font-size:initial;
+}
+
+.minimum-padding .jumbotron p{
+	font-size:16px;
+}
+
+#sdaas .jumbotron {
+    background-image: url("../images/sdaas_landing_team.jpg");
+}
+#enterprise-it .jumbotron {
+    background-image: url("../images/ent-it_landing_cloud.jpg");
+} 
+#serviceprovider .jumbotron {
+    background-image: url("../images/sp-it_landing_multi.jpg");
+} 
+/* #partnering.landing .jumbotron {
+    background-image: url("../images/sdaas-landing-team.jpg");
+}*/ 
+#aboutus .jumbotron {
+    background-image: url("../images/trivandrum_street.jpg");
+}  
+
+		/************* 4.3 -  Section Content *************/
+.no-border{
+	border:0;
+	
+}
+
+.no-border-radius{
+	border-radius:0;
+	
+}
+.border-right{
+	border-top:0;
+	border-right:1px;
+	border-bottom:0;
+	border-left:0;
+	
+}
+.border-left{
+	border-top:0;
+	border-right:0;
+	border-bottom:0;
+	border-left:1px;
+	
+}
+
+.plainbox, .greenbox{
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);
+	padding:20px;
+}
+.greenbox
+{
+	border: 2px solid #0e600e !important;
+}
+
+
+		/*************  4.4 - PANELS *************/
+.panel-group .panel{
+	border-radius:0;
+}
+
+.panel{
+	margin-top:15%;
+	margin-bottom:15%;
+	box-shadow:none;
+}	
+
+.panel-kvaliteta{
+	border: 2px solid #0e600e;
+	margin-top:0;
+	margin-bottom:0;
+	height:100%;
+}
+
+.panel-kvaliteta .list-group{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+.panel-heading{
+	border-radius:0;
+	background-color:#0e600e;
+	border-color:#0e600e;
+}
+
+.panel-heading h2{
+	color:#fff;
+}
+
+.panel-heading > .panel-title{
+	color:#fff;
+}
+
+.panel ul li i {
+  color: #0e600e;
+  margin-right:0.4em;
+  margin-left:0.4em;
+}
+
+.panel-heading > .panel-title h1,
+.panel-title h2,
+.panel-title h3,
+.panel-title h4,
+.panel-title h5,
+.panel-title h6{
+	color:#fff;
+	
+}
+/************* 6. Approach *************/
+
+.iconbox-content
+{
+    color:#0e600e !important;
+}
+
+.iconbox-content i 
+{
+    margin-top:5%;
+}
+.iconbox-content i.fa-border{
+	border-color:#0e600e;
+}
+
+.iconbox-content div span
+{
+    margin-bottom:5%;
+}
+
+
+/**********
+7. Contact
+**********/
+
+
+.contact-text
+{
+	border:none;
+	max-width:100%;
+	padding-top:15%;
+	padding-bottom:14%;
+	padding-left:10%;
+	padding-right:10%;
+	-webkit-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+}
+.contact-text p
+{
+    color: #000 !important;
+    font-size: 20px;
+    text-align: center;
+}
+/************* TABLET - PORTRAIT or SMALLER SCREENS *************/
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+  #navbar {
+    text-align: center;
+  }
+}  
+@media(min-width: 768px) and (max-width: 1024px){
+
+/************* 2. Tablets - Navigation *************/
+	/************* 2.2 Navigation - Main Menu *************/  
+.navbar ul.nav li a {
+    font-size: 12px;
+	padding-left: 5px;
+	padding-right:5px;
+}
+
+/*************  4. Tablet - Content *************/
+
+		/*************  4.1 Tablet - Carousel *************/
+.carousel-caption {
+    text-shadow: none;
+    padding-bottom: 15%;
+    font-size: 2em;
+}
+.carousel-indicators {
+	bottom:-10px;
+}
+
+.carousel-indicators li {
+	height:7px;
+	width:7px;
+}
+.carousel-indicators .active{
+	height:9px;
+	width:9px;
+}
+
+.right.carousel-control .glyphicon, 
+.left.carousel-control .glyphicon
+{
+     visibility:hidden;
+}
+.contact-text
+{
+	-webkit-box-shadow: inset 0px -5px 10px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -5px 10px -3px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -5px 10px -3px rgba(0,0,0,0.75);
+}
+		/*************  4.2 Tablet - Jumbotron *************/
+/* .jumbotron.banner{
+	height:300px;
+}
+
+.jumbotron-text{
+	padding-top:12%;
+} */
+
+#section-content.list-group{
+	text-align:center;
+	
+}
+
+
+		/*************  4.4 Tablet - Panels *************/
+
+.panel{
+	margin-top:0;
+	margin-bottom:3%;
+}	
+
+.panel-kvaliteta{
+	border: 2px solid #0e600e;
+	margin-top:0;
+	margin-bottom:0;
+	height:100%;
+}
+
+.panel-kvaliteta .list-group{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+}/*end of TABLET - PORTRAIT STYLE*/
+
+/************* TABLET - LANDSCAPE *************/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+		/********** Tablet LS - 7. Approach **********/
+.iconbox-content
+{
+    font-size:17px;
+}	
+
+		/********** Tablet LS - 7. Contact **********/
+.contact-text
+{
+	padding-top:8%;
+	padding-bottom:7%;
+	-webkit-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+}
+
+}
+
+/************ MOBILE *************/
+@media(min-width: 321px) and (max-width: 767px) {
+
+body {
+  padding-top: 0;
+}
+
+section {
+	padding-top:20%;
+}
+/************* 2. Mobile - Navigation *************/
+	/************* 2.2 Navigation - Main Menu *************/
+.navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #000;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+   
+   .navbar ul.nav li a.visible-xs{
+	   display:inline-block !important;
+   }
+
+/*************  4. Mobile - Content *************/
+
+		/*************  4.1 MOBILE - Carousel *************/
+#myCarousel {
+
+  width: 100%;
+}
+  /* NEEDS FIXING FOR MOBILE */
+/*  .carousel-inner > .item {
+  width: 100%;
+  height: 250px;
+} 
+
+.carousel-inner > .item > a > img, 
+.carousel-inner > .item > img, 
+.img-responsive, .thumbnail a > img, 
+.thumbnail > img{
+	position: absolute;
+	background-size: cover;
+	 background-size: cover;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+	
+} */
+.carousel-caption {
+    text-shadow: none;
+    padding-bottom: 8%;
+    font-size: 1em;
+}
+.carousel-indicators {
+	bottom:-10px;
+}
+
+.carousel-indicators li {
+	height:5px;
+	width:5px;
+}
+.carousel-indicators .active{
+	height:7px;
+	width:7px;
+}
+
+.right.carousel-control .glyphicon, 
+.left.carousel-control .glyphicon
+{
+     visibility:hidden;
+}
+			
+			/*************  4.2 Mobile - Jumbotron *************/
+/* .jumbotron.banner{ */
+	/* height:300px; */
+/* } */
+
+/* .jumbotron-text{ */
+	/* font-size:15px; */
+/* } */
+/* .jumbotron p{ */
+	/* font-size:18px; */
+/* } */
+/********** Mobile - 7. Contact **********/
+
+.contact-text{
+	border:none;
+    padding: 30px 25px;
+	height:initial;
+	box-shadow: none;
+}
+
+.contact-text p
+{
+    color: #000 !important;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contact-img{
+	-webkit-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+		/*************  4.4 MOBILE - Panels *************/
+
+.panel{
+	margin-top:0;
+	margin-bottom:3%;
+}	
+
+.panel-kvaliteta{
+	border: 2px solid #0e600e;
+	margin-top:0;
+	margin-bottom:0;
+	height:100%;
+}
+
+.panel-kvaliteta .list-group{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+}
