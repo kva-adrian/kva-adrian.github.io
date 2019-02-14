@@ -1,19 +1,49 @@
-/* affix the 2nd navbar after scroll past first navbar */
-/*  $('#nav2').affix({
-      offset: {
-        top: 25
-      }
-});	 */
 $(function() {
     $('header').height($('nav').height());
     
     $('nav').affix({
         offset: { top: $('nav').offset().top }
     });
+
+
+$("#nav2 li").on("click", function() {
+  $("#nav2 li").removeClass("active");
+  $(this).addClass("active");
 });
 
-/* $("#kva-menutabs li").on("click", function() {
-  $("#kva-menutabs li").removeClass("active");
+$("#sdaasmenu a").click(function() {
+	$("#nav-lower").load("pillmenu.html #pillmenu-sdaas");
+	$(".dropdown ul").removeClass("hidden-lg hidden-md hidden-sm");
+	$("#sdaasmenu ul").addClass("hidden-lg hidden-md hidden-sm");
+  });
+$("#entitmenu a").click(function() {
+	$("#nav-lower").load("pillmenu.html #pillmenu-entit");
+	$(".dropdown ul").removeClass("hidden-lg hidden-md hidden-sm");
+	$("#entitmenu ul").addClass("hidden-lg hidden-md hidden-sm");
+});
+
+$("#spitmenu a").click(function() {
+    $("#nav-lower").load("pillmenu.html #pillmenu-spit");
+	$(".dropdown ul").removeClass("hidden-lg hidden-md hidden-sm");
+	$("#spitmenu ul").addClass("hidden-lg hidden-md hidden-sm");
+  }); 
+$("#partneringmenu a").click(function() {
+    $("#nav-lower").load("pillmenu.html #pillmenu-partnering");
+	$(".dropdown ul").removeClass("hidden-lg hidden-md hidden-sm");
+	$("#partneringmenu ul").addClass("hidden-lg hidden-md hidden-sm");
+  }); 
+$("#aboutmenu a").click(function() {
+    $("#nav-lower").load("pillmenu.html #pillmenu-about");
+	$(".dropdown ul").removeClass("hidden-lg hidden-md hidden-sm");
+	$("#aboutmenu ul").addClass("hidden-lg hidden-md hidden-sm");
+  });   
+
+  
+  
+
+});
+/* $("#nav2 li").on("click", function() {
+  $("#nav2 li").removeClass("active");
   $(this).addClass("active");
 }); */
 
@@ -27,62 +57,3 @@ $(function() {
     });
 });
  */
-/* $("ul.nav a").click(function(e) {
-    e.preventDefault(); //To prevent the default anchor tag behavior
-    $("#ul.nav a").removeClass("active")
-    var url = this.href;
-    var hash = new URL(url).hash;
-    // localStorage.setItem("hash",hash)
-    $(this).addClass("active");
-    $(".container").load(url);
-    location.hash = hash;
-  });
-  var hash = new URL(location.href).hash; // localStorage.get("hash");
-  if (hash) { // if url / localStorage had a hash
-    $("a[href='#" + hash + "']").click();
-  }  
- */
-
-
-
-//Make dropdown load external html pages
-/* $(function(){
-    $(".dropdown-menu a").click(function(e){
-        e.preventDefault(); //To prevent the default anchor tag behavior
-        var url = this.href;
-        $(".container").load(url);
-    });
-}); */
-
-
-//Keep page active when on load
-/* $(document).ready(function() {
-    if (location.hash) {
-  $('a[href=\'' + location.hash + '\']').tab('show');
-}
-var activeTab = localStorage.getItem('activeTab');
-if (activeTab) {
-  $('a[href="' + activeTab + '"]').tab('show');
-}
-
-$('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
-  e.preventDefault()
-  var tab_name = this.getAttribute('href')
-  if (history.pushState) {
-    history.pushState(null, null, tab_name)
-  }
-  else {
-    location.hash = tab_name
-  }
-  localStorage.setItem('activeTab', tab_name)
-
-  $(this).tab('show');
-  return false;
-});
-$(window).on('popstate', function () {
-  var anchor = location.hash ||
-    $('a[data-toggle=\'tab\']').first().attr('href');
-  $('a[href=\'' + anchor + '\']').tab('show');
-});
-
-}); */
