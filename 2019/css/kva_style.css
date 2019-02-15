@@ -43,7 +43,7 @@ section ul li:before {
 }
 
 section.top-space {
-	padding-top:4%;
+	padding-top:5%;
 }
 
 
@@ -162,24 +162,26 @@ a.thumbnail:active{
     color: #0e600e !important;
 }
 .navbar ul.nav li.active > a, .navbar ul.nav li.open > a {
-    color: #0e600e !important;
+    color: #0e600e;
     background: transparent !important;
 }
 
 		/************* 2.4 Navigation - Sub Menu Pills Formatting *************/
-.nav-pills > li > a{
-	border-radius:0;
+#nav-lower {
+  width: 100%;
+  margin-bottom:0px;
+  border-top-color:#000;
+  border:1px !important;
 }
-
-nav ul#kva-menutabs.nav  li a {
+#nav-lower .nav li a {
     font-size: 14px;
-	color:inherit;
+	color:red;
 	padding:8px 10px;
 }
-nav ul#kva-menutabs.nav li a:hover, nav ul#kva-menutabs.nav li a:focus {
+#nav-lower .nav li a:hover, #nav-lower .nav li a:focus {
     color: #0e600e !important;
 }
-nav ul#kva-menutabs.nav li.active > a, nav ul#kva-menutabs.nav li.open > a {
+#nav-lower .nav li.active > a, #nav-lower .nav li.open > a {
     color: #fff !important;
     background: #0e600e !important;
 }
@@ -297,10 +299,6 @@ nav.affix {
   -webkit-transition: all .6s ease-in-out;
 }
 
-#nav-lower {
-  width: 100%;
-  margin-bottom:0px;
-}
 /************* 3. Footer *************/
  .footer {
   position: absolute;
@@ -427,7 +425,7 @@ nav.affix {
     background-image: url("../images/sdaas-landing-team.jpg");
 }*/ 
 #aboutus .jumbotron {
-    background-image: url("../images/technophase3dark.jpg");
+    background-image: url("../images/technophase3_dark.jpg");
 }  
 
 		/************* 4.3 -  Section Content *************/
