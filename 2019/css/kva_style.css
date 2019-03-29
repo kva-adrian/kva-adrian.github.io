@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i');
 html {
   position: relative;
@@ -14,11 +14,10 @@ body {
 	width:95%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6{
 	color: #0e600e;
     font-family: 'M PLUS 1p', sans-serif;
 }
-
 hr{
 	border-color: #0e600e;
 }
@@ -38,17 +37,15 @@ section ul li:before {
   content: '';
   font-family: '';
   float: left;
-  margin-left:1em;
-  text-align:center;
 }
 
 section ul li{
-	padding-left:1em;
-	text-indent:-1em;
+	
 }
 
 section ul li i{
 	color: #0e600e;
+	text-indent:-1em;
 }
 
 .page-header{
@@ -98,7 +95,20 @@ blockquote.pull-right {
     background-color: #0e600e !important;
     color: #fff !important;
 }
+.btn-transparent
+{
+    border:2px solid #fff !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    padding: 16px;
 
+}
+.btn-transparent:hover
+{
+    border:2px solid #fff !important;
+    background-color: #fff !important;
+    color: #0e600e !important;
+}
 .btn-search
 {
     border:1px solid #fff !important;
@@ -131,9 +141,8 @@ a.thumbnail:active{
     position:absolute;
     top:0;
     left:0;
-    background-color:rgba(0,0,0,0.58);
+    background-color:rgba(0,0,0,0.7);
     color:#FFFFFF;
-    text-align:center;
     /* z-index:2; */
     width:100%;
     height:100%;
@@ -329,10 +338,9 @@ nav.affix {
 
 /************* 3. Footer *************/
  .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #f5f5f5;
+	bottom: 0;
+	width: 100%;
+	background-color: #f5f5f5;
 }
 
  .kva-footer {
@@ -443,18 +451,23 @@ nav.affix {
     background-image: url("../images/sdaas_landing_team.jpg");
 }
 #enterprise-it .jumbotron {
-    background-image: url("../images/ent-it_landing_cloud.jpg");
+    background-image: url("../images/ent-it_landing_pyramid.jpg");
 } 
-#serviceprovider .jumbotron {
-    background-image: url("../images/sp-it_landing_multi.jpg");
-} 
+/* #serviceprovider .jumbotron {
+    background-image: url("../images/sp-it_landing_diagram.jpg");
+}  */
 /* #partnering.landing .jumbotron {
     background-image: url("../images/sdaas-landing-team.jpg");
 }*/ 
 #aboutus .jumbotron {
     background-image: url("../images/technophase3_dark.jpg");
-}  
-
+} 
+#wired-intro {
+    background-image: url("../images/sp-it_wired_fiber.jpg");
+} 
+#verdant {
+    background-image: url("../images/sp-it_verdant.jpg");
+} 
 		/************* 4.3 -  Section Content *************/
 .no-border{
 	border:0;
@@ -496,11 +509,13 @@ nav.affix {
 }
 
 .panel{
-	margin-top:15%;
-	margin-bottom:15%;
 	box-shadow:none;
 }	
 
+.panel-padded{
+	margin-top:15%;
+	margin-bottom:15%;
+}
 .panel-kvaliteta{
 	border: 2px solid #0e600e;
 	margin-top:0;
@@ -508,10 +523,16 @@ nav.affix {
 	height:100%;
 }
 
-.panel-kvaliteta .list-group{
-	padding-top:2%;
-	padding-bottom:2%;
+.panel-kvaliteta .list-group li{
+	padding-left:2em;
 }
+	
+.panel-kvaliteta .list-group{
+	padding-left:0em;
+}
+
+
+	
 .panel-heading{
 	border-radius:0;
 	background-color:#0e600e;
@@ -526,10 +547,9 @@ nav.affix {
 	color:#fff;
 }
 
-.panel ul li i {
-  color: #0e600e;
-  margin-right:0.4em;
-  margin-left:0.4em;
+.panel ul li i{
+	/* padding-left:1em; */
+	text-indent:-1em;
 }
 
 .panel-heading > .panel-title h1,
@@ -587,6 +607,7 @@ nav.affix {
     font-size: 20px;
     text-align: center;
 }
+
 /************* TABLET - PORTRAIT or SMALLER SCREENS *************/
 @media (min-width: 768px) {
   ul.nav li:hover > ul.dropdown-menu {
@@ -598,6 +619,9 @@ nav.affix {
   #navbar {
     text-align: center;
   }
+footer{
+	position:absolute;
+}
 }  
 @media(min-width: 768px) and (max-width: 1024px){
 
@@ -699,7 +723,7 @@ nav.affix {
 }
 
 /************ MOBILE *************/
-@media(min-width: 321px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
 
 body {
   padding-top: 0;
@@ -817,7 +841,13 @@ section {
 /* .jumbotron p{ */
 	/* font-size:18px; */
 /* } */
-/********** Mobile - 7. Contact **********/
+
+/********** 4.3 Mobile - Footer **********/
+footer{
+	position:relative;
+}
+
+/********** Mobile - . Contact **********/
 
 .contact-text{
 	border:none;
