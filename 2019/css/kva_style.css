@@ -530,7 +530,25 @@ nav.affix {
 .panel-kvaliteta .list-group{
 	padding-left:0em;
 }
+.cards .panel{
+	min-height:400px;
+	padding-top:80px;
+}
 
+.cards .panel-heading{
+	background-color:#fff;
+	padding-top:
+}
+.cards .panel-heading, .cards .panel-heading h3 {
+	color:inherit;
+}
+.cards .panel-body {
+	color:initial;
+}
+.cards .panel-hover:hover
+{
+    box-shadow: 3px 3px 10px 3px !important;
+}
 
 	
 .panel-heading{
