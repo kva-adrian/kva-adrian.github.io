@@ -39,9 +39,9 @@ section ul li:before {
   float: left;
 }
 
-section ul li{
+/* section ul li{
 	
-}
+} */
 
 section ul li i{
 	color: #0e600e;
@@ -371,8 +371,6 @@ nav.affix {
     color: #fff; 
     font-size: 14px;
     word-spacing: 4px;
-    font-weight: bold;
-    font-family: 'Assistant', sans-serif;
 }
 
 .kva-prefooter {
@@ -460,7 +458,7 @@ nav.affix {
     background-image: url("../images/sdaas-landing-team.jpg");
 }*/ 
 #aboutus .jumbotron {
-    background-image: url("../images/technophase3_dark.jpg");
+    background-image: url("../images/technophase3_original.jpg");
 } 
 #wired-intro {
     background-image: url("../images/sp-it_wired_fiber.jpg");
@@ -517,10 +515,12 @@ nav.affix {
 	margin-bottom:15%;
 }
 .panel-kvaliteta{
-	border: 2px solid #0e600e;
 	margin-top:0;
 	margin-bottom:0;
 	height:100%;
+}
+.panel-darkish{
+	background-color:rgba(0,0,0,0.7);
 }
 
 .panel-kvaliteta .list-group li{
@@ -530,6 +530,14 @@ nav.affix {
 .panel-kvaliteta .list-group{
 	padding-left:0em;
 }
+
+.panel-kvaliteta ul{
+  border: 1px solid rgba(14,96,14,1);
+}
+
+.panel-kvaliteta .panel-body{
+  border: 1px solid rgba(14,96,14,1);
+}
 .cards .panel{
 	min-height:400px;
 	padding-top:80px;
@@ -537,7 +545,6 @@ nav.affix {
 
 .cards .panel-heading{
 	background-color:#fff;
-	padding-top:
 }
 .cards .panel-heading, .cards .panel-heading h3 {
 	color:inherit;
@@ -550,19 +557,31 @@ nav.affix {
     box-shadow: 3px 3px 10px 3px !important;
 }
 
-	
 .panel-heading{
 	border-radius:0;
 	background-color:#0e600e;
-	border-color:#0e600e;
+  border-color:#0e600e;
+}
+.panel-heading h2{
+  color:#fff;
+  
+}
+#accordion .panel-heading{
+  background: rgba(14,96,14,1);
+  background: -moz-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(14,96,14,1)), color-stop(12%, rgba(14,96,14,1)), color-stop(85%, rgba(54,156,54,1)), color-stop(100%, rgba(60,163,60,1)));
+  background: -webkit-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: -o-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: -ms-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: linear-gradient(to right, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e600e', endColorstr='#3ca33c', GradientType=1 );
 }
 
-.panel-heading h2{
-	color:#fff;
-}
+
 
 .panel-heading > .panel-title{
-	color:#fff;
+  color:#fff;
+  text-decoration:none;
 }
 
 .panel ul li i{
@@ -578,6 +597,29 @@ nav.affix {
 .panel-title h6{
 	color:#fff;
 	
+}
+a .panel-title{
+  text-decoration: none;
+}
+a .panel-title ,a .panel-title:active {
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.accordion-toggle .panel-heading :after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings'; 
+  content: "\e114";
+  float: right;
+  vertical-align: middle;
+  transition: all 0.5s;
+}
+.accordion-toggle.collapsed .panel-heading :after  {
+ -webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+transform: rotate(180deg);
 }
 /************* 6. Approach *************/
 
@@ -627,7 +669,7 @@ nav.affix {
 }
 
 /************* TABLET - PORTRAIT or SMALLER SCREENS *************/
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   ul.nav li:hover > ul.dropdown-menu {
     display: block;
   }
@@ -717,16 +759,22 @@ footer{
 	padding-bottom:2%;
 }
 
+
+
 }/*end of TABLET - PORTRAIT STYLE*/
 
 /************* TABLET - LANDSCAPE *************/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
 		/********** Tablet LS - 7. Approach **********/
-.iconbox-content
+		
+footer{
+	position:absolute;
+}
+
+/* .iconbox-content
 {
-    font-size:17px;
-}	
+}	 */
 
 		/********** Tablet LS - 7. Contact **********/
 .contact-text
@@ -747,9 +795,6 @@ body {
   padding-top: 0;
 }
 
-section {
-	padding-top:20%;
-}
 /************* 2. Mobile - Navigation *************/
 	/************* 2.2 Navigation - Main Menu *************/
 .navbar-nav  {
@@ -862,7 +907,7 @@ section {
 
 /********** 4.3 Mobile - Footer **********/
 footer{
-	position:relative;
+	position:absolute;
 }
 
 /********** Mobile - . Contact **********/
