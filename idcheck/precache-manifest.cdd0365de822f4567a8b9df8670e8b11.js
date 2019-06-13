@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8d9ed548be1367f847616289c42796f",
+    "revision": "3e0c32630b7571aaff45b928f0017aee",
     "url": "https://kva-adrian.github.io/idcheck/index.html"
   },
   {
-    "revision": "3f9f01e2d6f05b6c8fa1",
+    "revision": "58aae92bcaef9d597534",
     "url": "https://kva-adrian.github.io/idcheck/static/css/main.331a09a8.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://kva-adrian.github.io/idcheck/static/js/2.db14ee33.chunk.js"
   },
   {
-    "revision": "3f9f01e2d6f05b6c8fa1",
-    "url": "https://kva-adrian.github.io/idcheck/static/js/main.9e85f9e7.chunk.js"
+    "revision": "58aae92bcaef9d597534",
+    "url": "https://kva-adrian.github.io/idcheck/static/js/main.a009a3e7.chunk.js"
   },
   {
     "revision": "2c82900ddfc716e8f33b",

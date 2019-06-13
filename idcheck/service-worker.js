@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://kva-adrian.github.io/idcheck/precache-manifest.c207ef34c8c96973a53bd8edc1d335f5.js"
+  "https://kva-adrian.github.io/idcheck/precache-manifest.cdd0365de822f4567a8b9df8670e8b11.js"
 );
 
 self.addEventListener('message', (event) => {
