@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ID Scan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="~/js/jquery.min.js"></script>
+    
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/IDScan.css">
+    <!--===============================================================================================-->
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/CID.ico" />
+    <!--===============================================================================================-->
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div id="root">
+        <div class="mainContent">
+            <header>
+                <div class="row wrapper">
+                    <div class="logo">
+
+                    </div>
+                </div>
+            </header>
+            <div class="body column capture-photo">
+                @RenderBody()
+               
+            </div>
+        </div>
+        <footer>
+            <div class="footrow">
+                <p>Copyright &copy;
+                <script type="text/javascript">document.write(new Date().getFullYear());</script> All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

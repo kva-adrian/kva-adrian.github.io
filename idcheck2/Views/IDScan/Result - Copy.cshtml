@@ -1,0 +1,61 @@
+﻿@model MVC_AssureIDScan.Models.IDScan
+@{
+    Layout = "~/Views/Shared/_LayoutIDScan.cshtml";
+}
+
+<div class="wrapper">
+    <div class="row results-id-sig">
+        <figure class="results-id">
+            <img src="@ViewBag.UrlPhoto" class="profile" alt="idscango" style="height:200px;width:200px;">
+        </figure>
+        <figure class="results-sig"></figure>
+    </div>
+    <div class="results-data">
+
+        <div class="row">
+            <div class="type" style="font-weight:bold;">Full Name :</div>
+            <div class="Data" style="margin-left:5px;">
+                @Html.DisplayFor(model => model.FullName)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="type" style="font-weight:bold;">Date of Birth :</div>
+            <div class="Data" style="margin-left:5px;">
+                @Html.DisplayFor(model => model.DOB)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="type" style="font-weight:bold;">Document Type :</div>
+            <div class="Data" style="margin-left:5px;">
+                @Html.DisplayFor(model => model.TypeOfDocument)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="type" style="font-weight:bold;">Document No :</div>
+            <div class="Data" style="margin-left:5px;">
+                @Html.DisplayFor(model => model.DocumentNo)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="type" style="font-weight:bold;">Expiration Date :</div>
+            <div class="Data" style="margin-left:5px;">
+                @Html.DisplayFor(model => model.ExpDate)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="type" style="font-weight:bold;">Document Authentication :</div>
+            <div class="Data" style="margin-left:5px;">
+                @Html.DisplayFor(model => model.FinalResult)
+            </div>
+        </div>
+
+    </div>
+    <div class="btn outline">
+        <a class="buttonBgText" href="~/IDScan/CapturePhoto">Home</a>
+    </div>
+</div>
