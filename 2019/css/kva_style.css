@@ -25,14 +25,19 @@ ul, li {
   list-style: none;
 }
 
+a, a:focus, a:hover{
+  color:#0e600e;
+}
+
 section {
 	margin-top:25px;
 	margin-bottom:25px;
 }
 
 section.top-space {
-	padding-top:5%;
+	padding-top:3%;
 }
+
 section ul li:before {
   content: '';
   font-family: '';
@@ -70,9 +75,8 @@ blockquote.pull-right {
 .btn-default
 {
     border:2px solid #0e600e !important;
-    background-color: #0e600e !important;
-    color: #fff !important;
-    padding: 16px;
+    background-color: #0e600e;
+    color: #fff;
 
 }
 .btn-default:hover
@@ -85,9 +89,12 @@ blockquote.pull-right {
 .btn-primary
 {
     border:2px solid #0e600e !important;
-    background-color: #fff !important;
-    color: #0e600e !important;
-    padding: 16px;
+    background-color: #fff;
+    color: #0e600e;
+}
+
+.btn-kva{
+  padding: 16px;
 }
 .btn-primary:hover
 {
@@ -95,12 +102,15 @@ blockquote.pull-right {
     background-color: #0e600e !important;
     color: #fff !important;
 }
+
+.btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary{
+  background-color: #0e600e;
+}
 .btn-transparent
 {
     border:2px solid #fff !important;
-    background-color: transparent !important;
-    color: #fff !important;
-    padding: 16px;
+    background-color: transparent;
+    color: #fff;
 
 }
 .btn-transparent:hover
@@ -137,19 +147,40 @@ a.thumbnail:active{
 .thumbnail {
 	border-radius:0;
 }
-.thumbnail .caption-slide {
-    position:absolute;
-    top:0;
-    left:0;
-    background-color:rgba(0,0,0,0.7);
-    color:#FFFFFF;
-    /* z-index:2; */
-    width:100%;
-    height:100%;
-    padding:10px;
-    display:none;
+
+
+.thumbnail .caption-slide h3, 
+.carousel .caption-slide h3 {
+  color:#FFFFFF !important;
+  
 }
 
+.thumbnail .caption-slide blockquote,
+.carousel .caption-slide blockquote
+{
+  border-left-color:#FFFFFF;
+}
+
+.thumbnail .caption-slide .blockquote-reverse,
+.carousel .caption-slide .blockquote-reverse
+{
+  border-right-color:#FFFFFF;
+}
+
+.thumbnail .caption-slide, .carousel .caption-slide {
+  position:absolute;
+  top:0;
+  left:0;
+  color:#FFFFFF !important;
+  /* z-index:2; */
+  width:100%;
+  height:100%;
+  padding:10px;
+  display:none;
+}
+.overlay-dark{
+  background-color:rgba(0,0,0,0.6);
+}
 .img-wrapper {
   position: relative;
 }
@@ -161,6 +192,14 @@ a.thumbnail:active{
     margin-right: auto;
     margin-left: auto;
 }
+/************* HOVER ZOOM *************/
+.hover-zoom:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: all .5s;
+  z-index:1;
+}
+
 /************* 2 NAVIGATION *************/
 	/************* 2.1 Navigation - General *************/
 .navbar{
@@ -273,6 +312,27 @@ a.thumbnail:active{
 	padding-bottom:8px;
 	
 }
+
+.nav-pills > li > a{
+  border-radius:0;
+}
+
+.nav-pills > li.active > a.btn-primary, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+  color:#fff;
+  background-color:#0e600e;
+  
+}
+
+.nav-sidebar .list-group-item {
+  border-radius:0;
+}
+
+.nav-sidebar.list-group > li.active > a, .nav-sidebar.list-group > li.active > a:focus, .nav-sidebar.list-group > li.active > a:hover{
+  color:#fff;
+  background-color:#0e600e;
+  
+}
+
 	/************* 2.7 Navigation - Dropdown *************/
 .dropdown-submenu {
     position:relative;
@@ -458,12 +518,14 @@ nav.affix {
     background-image: url("../images/sdaas-landing-team.jpg");
 }*/ 
 #aboutus .jumbotron {
-    background-image: url("../images/technophase3_original.jpg");
+  background-image: url("../images/technophase3.jpg");
+  padding-top:8%;
+  padding-bottom:8%;
 } 
 #wired-intro {
     background-image: url("../images/sp-it_wired_fiber.jpg");
 } 
-#verdant {
+#verdant-intro {
     background-image: url("../images/sp-it_verdant.jpg");
 } 
 		/************* 4.3 -  Section Content *************/
@@ -491,13 +553,23 @@ nav.affix {
 	
 }
 
-.plainbox, .greenbox{
+.plainbox, .greenbox, .scroll-box{
 	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);
-	padding:20px;
+}
+
+.plainbox, .greenbox{
+  padding:20px;
 }
 .greenbox
 {
 	border: 2px solid #0e600e !important;
+}
+
+.scroll-box{
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 
@@ -579,7 +651,8 @@ nav.affix {
 
 
 
-.panel-heading > .panel-title{
+.panel-kvaliteta > .panel-heading > .panel-title, 
+.panel-kvaliteta > a .panel-title{
   color:#fff;
   text-decoration:none;
 }
@@ -620,6 +693,57 @@ a .panel-title ,a .panel-title:active {
  -webkit-transform: rotate(180deg);
 -moz-transform: rotate(180deg);
 transform: rotate(180deg);
+}
+
+.panel > .list-group .list-group-item:last-child{
+  margin-bottom:0px;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+  color: #fff;
+background-color: #0e600e;
+border-color: #0e600e;
+}
+.list-group-item{
+  border: 1px solid #0e600e;
+}
+.list-group-item:first-child, .list-group-item:last-child{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom:-1px;
+
+}
+
+
+
+/**************4.8  Modal**************************/
+.modal{
+  z-index: 10000 !important;
+}
+.modal-dialog.modal-dialog-kva{
+  width:100%;
+}
+
+.modal-body .modal-body-kva{
+  padding:5px;
+}
+
+.modal-header .modal-header-kva{
+  padding:5px;
+  border-bottom:none;
+}
+/**************4.8  Gallery**************************/
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-sizer {
+  width: 275px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 /************* 6. Approach *************/
 
@@ -950,5 +1074,18 @@ box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
 .panel-kvaliteta .list-group{
 	padding-top:2%;
 	padding-bottom:2%;
+}
+.modal-dialog.modal-dialog-kva{
+  width:inherit;
+}
+
+section.top-space {
+	padding-bottom:15%;
+}
+#myMap{
+  display:none;
+}
+.scroll-box{
+width:100% !important;
 }
 }

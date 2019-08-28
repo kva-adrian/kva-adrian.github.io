@@ -1,0 +1,57 @@
+{
+	"Ethiopia" : [
+		{
+			"companyname" : "Copycat Ethiopia",
+			"companyaddress" : "ISB Road, Nanakrmaguda, Gachibowli, Hyderabad,",
+			"Tel":  "040 2300 7204",
+			"Technology": "'Colloboration', 'Data Center', 'Enterprice Networking', 'Security'",
+			"Industry": "'Education', 'Financial Services', 'Wholesale/Distribution'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 9.005401,
+			"longitude": 38.763611,
+			"color":"Green",
+			"title" : "Adrian Kenya"
+		},
+		{
+			"companyname" : "SeedIT Solutions",
+			"companyaddress" : "301, South street, Opp Rajpath Club, Bodakdev,",
+			"Tel":  "032 3671 9890",
+			"Technology": "'Colloboration', 'Enterprice Networking', 'Routing',",
+			"Industry": "'Technical Services', 'Service Provider', 'Financial Services'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 9.3139,
+			"longitude": 42.1182,
+			"color":"Green",
+			"title" : "Adrian Kenya"
+		},
+		{
+			"companyname" : "National Marketers",
+			"companyaddress" : "241, Sarthik 2, Opp Rajpath Club, Bodakdev,",
+			"Tel":  "027 4323 9393",
+			"Technology": "'Data Center', 'Enterprice Networking', 'Security'",
+			"Industry": "'Education', 'Healthcare', 'Hospitality', 'Financial Services'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 9.2623,
+			"longitude": 41.1124,
+			"color":"Green",
+			"title" : "Adrian Kenya"
+		},
+		{
+			"companyname" : "SAT Import Trading PLC",
+			"companyaddress" : "301, West street, Opp ahahh , Banghok,",
+			"Tel":  "087 4123 9123",
+			"Technology": "'Data Center', 'Enterprice Networking',",
+			"Industry": "'Manufacturing', 'Service Provider', 'Wholesale/Distribution'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 9.1124,
+			"longitude": 39.1987,
+			"color":"Green",
+			"title" : "Adrian Kenya"
+		}
+		
+	]
+}

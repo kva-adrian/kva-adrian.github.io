@@ -1,64 +1,349 @@
-		<!--Service Delivery Partners-->
-		<section class="top-space" id="serviceDeliveryPartners">
-		<!-- SERVICE DELIVERY PARTNERS SEARCHBAR-->
-		<div class="row">
-			<div class="col-sm-12">
+<head>
+	<title>Service Deliver Partners | Kvaliteta</title>
+</head>
+<!--Service Delivery Partners-->
+<section class="top-space" id="serviceDeliveryPartners">
+	<!-- SERVICE DELIVERY PARTNERS SEARCHBAR-->
+	<div class="row">
+		<div class="col-xs-12">
 			<h2>SERVICE DELIVERY PARTNERS</h2>
-					<input type="text" class="form-control" placeholder="Search" id="filter">
-			</div>
 		</div>
-		<!-- SERVICE DELIVERY PARTNERS CONTENT-->
-		<div class="media">
-			<div class="media-left">
-			<a href="http://ubora.co.ke">
-			<img class="media-object" src="images/partner_sd/ubora.png" alt="Ubora Systems and Solutions Limited, Mitsumi Business Park 10th Floor, P.O. Box 58666-00100, Muthithi Road,Nairobi, Kenya, Africa">
-			</a>
+	</div>
+	<!-- SERVICE DELIVERY PARTNERS CONTENT-->
+	<div class="row">
+			<div class="form-group col-xs-12 col-sm-12 col-md-4">
+				<select id="country" class="form-control mydrop" name="country" onchange="GetMap()" required>
+					<option value="Select">Select Country*</option>
+					<option value="India">India</option>
+					<option value="Kenya">Kenya</option>
+					<option value="Rwanda">Rwanda</option>
+					<option value="Ethiopia">Ethiopia</option>
+					<option value="Singapore">Singapore</option>
+					<option>Uganda</option>
+					<option>Tanzania</option>
+					<option>East Africa</option>
+					<option>Afghanistan</option>
+					<option>Åland Islands</option>
+					<option>Albania</option>
+					<option>Algeria</option>
+					<option>American Samoa</option>
+					<option>Andorra</option>
+					<option>Angola</option>
+					<option>Anguilla</option>
+					<option>Antarctica</option>
+					<option>Antigua and Barbuda</option>
+					<option>Argentina</option>
+					<option>Armenia</option>
+					<option>Aruba</option>
+					<option>Australia</option>
+					<option>Austria</option>
+					<option>Azerbaijan</option>
+					<option>Bahamas</option>
+					<option>Bahrain</option>
+					<option>Bangladesh</option>
+					<option>Barbados</option>
+					<option>Belarus</option>
+					<option>Belgium</option>
+					<option>Belize</option>
+					<option>Benin</option>
+					<option>Bermuda</option>
+					<option>Bhutan</option>
+					<option>Bolivia, Plurinational State of</option>
+					<option>Bonaire, Sint Eustatius and Saba</option>
+					<option>Bosnia and Herzegovina</option>
+					<option>Botswana</option>
+					<option>Bouvet Island</option>
+					<option>Brazil</option>
+					<option>British Indian Ocean Territory</option>
+					<option>Brunei Darussalam</option>
+					<option>Bulgaria</option>
+					<option>Burkina Faso</option>
+					<option>Burundi</option>
+					<option>Cambodia</option>
+					<option>Cameroon</option>
+					<option>Canada</option>
+					<option>Cape Verde</option>
+					<option>Cayman Islands</option>
+					<option>Central African Republic</option>
+					<option>Chad</option>
+					<option>Chile</option>
+					<option>China</option>
+					<option>Christmas Island</option>
+					<option>Cocos (Keeling) Islands</option>
+					<option>Colombia</option>
+					<option>Comoros</option>
+					<option>Congo</option>
+					<option>Congo, the Democratic Republic of the</option>
+					<option>Cook Islands</option>
+					<option>Costa Rica</option>
+					<option>Côte d'Ivoire</option>
+					<option>Croatia</option>
+					<option>Cuba</option>
+					<option>Curaçao</option>
+					<option>Cyprus</option>
+					<option>Czech Republic</option>
+					<option>Denmark</option>
+					<option>Djibouti</option>
+					<option>Dominica</option>
+					<option>Dominican Republic</option>
+					<option>Ecuador</option>
+					<option>Egypt</option>
+					<option>El Salvador</option>
+					<option>Equatorial Guinea</option>
+					<option>Eritrea</option>
+					<option>Estonia</option>
+					<option>Falkland Islands (Malvinas)</option>
+					<option>Faroe Islands</option>
+					<option>Fiji</option>
+					<option>Finland</option>
+					<option>France</option>
+					<option>French Guiana</option>
+					<option>French Polynesia</option>
+					<option>French Southern Territories</option>
+					<option>Gabon</option>
+					<option>Gambia</option>
+					<option>Georgia</option>
+					<option>Germany</option>
+					<option>Ghana</option>
+					<option>Gibraltar</option>
+					<option>Greece</option>
+					<option>Greenland</option>
+					<option>Grenada</option>
+					<option>Guadeloupe</option>
+					<option>Guam</option>
+					<option>Guatemala</option>
+					<option>Guernsey</option>
+					<option>Guinea</option>
+					<option>Guinea-Bissau</option>
+					<option>Guyana</option>
+					<option>Haiti</option>
+					<option>Heard Island and McDonald Islands</option>
+					<option>Holy See (Vatican City State)</option>
+					<option>Honduras</option>
+					<option>Hong Kong</option>
+					<option>Hungary</option>
+					<option>Iceland</option>
+					<option>Indonesia</option>
+					<option>Iran, Islamic Republic of</option>
+					<option>Iraq</option>
+					<option>Ireland</option>
+					<option>Isle of Man</option>
+					<option>Israel</option>
+					<option>Italy</option>
+					<option>Jamaica</option>
+					<option>Japan</option>
+					<option>Jersey</option>
+					<option>Jordan</option>
+					<option>Kazakhstan</option>
+					<option>Kiribati</option>
+					<option>Korea, Democratic People's Republic of</option>
+					<option>Korea, Republic of</option>
+					<option>Kuwait</option>
+					<option>Kyrgyzstan</option>
+					<option>Lao People's Democratic Republic</option>
+					<option>Latvia</option>
+					<option>Lebanon</option>
+					<option>Lesotho</option>
+					<option>Liberia</option>
+					<option>Libya</option>
+					<option>Liechtenstein</option>
+					<option>Lithuania</option>
+					<option>Luxembourg</option>
+					<option>Macao</option>
+					<option>Macedonia, the former Yugoslav Republic of</option>
+					<option>Madagascar</option>
+					<option>Malawi</option>
+					<option>Malaysia</option>
+					<option>Maldives</option>
+					<option>Mali</option>
+					<option>Malta</option>
+					<option>Marshall Islands</option>
+					<option>Martinique</option>
+					<option>Mauritania</option>
+					<option>Mauritius</option>
+					<option>Mayotte</option>
+					<option>Mexico</option>
+					<option>Micronesia, Federated States of</option>
+					<option>Moldova, Republic of</option>
+					<option>Monaco</option>
+					<option>Mongolia</option>
+					<option>Montenegro</option>
+					<option>Montserrat</option>
+					<option>Morocco</option>
+					<option>Mozambique</option>
+					<option>Myanmar</option>
+					<option>Namibia</option>
+					<option>Nauru</option>
+					<option>Nepal</option>
+					<option>Netherlands</option>
+					<option>New Caledonia</option>
+					<option>New Zealand</option>
+					<option>Nicaragua</option>
+					<option>Niger</option>
+					<option>Nigeria</option>
+					<option>Niue</option>
+					<option>Norfolk Island</option>
+					<option>Northern Mariana Islands</option>
+					<option>Norway</option>
+					<option>Oman</option>
+					<option>Pakistan</option>
+					<option>Palau</option>
+					<option>Palestinian Territory, Occupied</option>
+					<option>Panama</option>
+					<option>Papua New Guinea</option>
+					<option>Paraguay</option>
+					<option>Peru</option>
+					<option>Philippines</option>
+					<option>Pitcairn</option>
+					<option>Poland</option>
+					<option>Portugal</option>
+					<option>Puerto Rico</option>
+					<option>Qatar</option>
+					<option>Réunion</option>
+					<option>Romania</option>
+					<option>Russian Federation</option>
+					<option>Saint Barthélemy</option>
+					<option>Saint Helena, Ascension and Tristan da Cunha</option>
+					<option>Saint Kitts and Nevis</option>
+					<option>Saint Lucia</option>
+					<option>Saint Martin (French part)</option>
+					<option>Saint Pierre and Miquelon</option>
+					<option>Saint Vincent and the Grenadines</option>
+					<option>Samoa</option>
+					<option>San Marino</option>
+					<option>Sao Tome and Principe</option>
+					<option>Saudi Arabia</option>
+					<option>Senegal</option>
+					<option>Serbia</option>
+					<option>Seychelles</option>
+					<option>Sierra Leone</option>
+					<option>Sint Maarten (Dutch part)</option>
+					<option>Slovakia</option>
+					<option>Slovenia</option>
+					<option>Solomon Islands</option>
+					<option>Somalia</option>
+					<option>South Africa</option>
+					<option>South Georgia and the South Sandwich Islands</option>
+					<option>South Sudan</option>
+					<option>Spain</option>
+					<option>Sri Lanka</option>
+					<option>Sudan</option>
+					<option>Suriname</option>
+					<option>Svalbard and Jan Mayen</option>
+					<option>Swaziland</option>
+					<option>Sweden</option>
+					<option>Switzerland</option>
+					<option>Syrian Arab Republic</option>
+					<option>Taiwan, Province of China</option>
+					<option>Tajikistan</option>
+					<option>Thailand</option>
+					<option>Timor-Leste</option>
+					<option>Togo</option>
+					<option>Tokelau</option>
+					<option>Tonga</option>
+					<option>Trinidad and Tobago</option>
+					<option>Tunisia</option>
+					<option>Turkey</option>
+					<option>Turkmenistan</option>
+					<option>Turks and Caicos Islands</option>
+					<option>Tuvalu</option>
+					<option>Ukraine</option>
+					<option>United Arab Emirates</option>
+					<option>United Kingdom</option>
+					<option>United States</option>
+					<option>United States Minor Outlying Islands</option>
+					<option>Uruguay</option>
+					<option>Uzbekistan</option>
+					<option>Vanuatu</option>
+					<option>Venezuela, Bolivarian Republic of</option>
+					<option>Viet Nam</option>
+					<option>Virgin Islands, British</option>
+					<option>Virgin Islands, U.S.</option>
+					<option>Wallis and Futuna</option>
+					<option>Western Sahara</option>
+					<option>Yemen</option>
+					<option>Zambia</option>
+					<option>Zimbabwe</option>
+				</select>
 			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Ubora Systems and Solutions Ltd.</h3>Ubora empowers the ICT trained youth from local communities thus localizing service delivery otherwise known as community based service provision in community oriented projects (connecting villages, schools and hospitals). We offers value based services for Healthcare, Education, e-Governance, Rural BPO’s and Transforming Agriculture.
-			</div>
+		<!--END LOCATION INPUT-->
+		<div class="form-group col-xs-12 col-sm-12 col-md-3">
+			<select id="technology" class="form-control mydrop" name="technology">
+				<option value="Select">Select Technology</option>
+				<option value="Colloboration">Colloboration</option>
+				<option value="Data Center">Data Center</option>
+				<option value="Enterprice Networking">Enterprice Networking</option>
+				<option value="Internet of Things">Internet of Things</option>
+				<option value="Routing">Routing</option>
+				<option value="Security">Security</option>
+				<option value="Switching">Switching</option>
+				<option value="Wireless">Wireless</option>
+			</select>
 		</div>
-		<div class="media">
-			<div class="media-left">
-			<a href="#">
-			<img class="media-object" src="images/partner_sd/placeholder.jpg" alt="Sudan">
-			</a>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Partner 2</h3>
-			</div>
+		<!--END Technology INPUT-->
+		<div class="form-group col-xs-12 col-sm-12 col-md-3">
+			<select id="industry" class="form-control mydrop" name="industry">
+				<option value="Select">Select Industry</option>
+				<option value="Education">Education</option>
+				<option value="Financial Services">Financial Services</option>
+				<option value="Healthcare">Healthcare</option>
+				<option value="Hospitality">Hospitality</option>
+				<option value="Manufacturing">Manufacturing</option>
+				<option value="Retail">Retail</option>
+				<option value="Service Provider">Service Provider</option>
+				<option value="Technical Services">Technical Services</option>
+				<option value="Wholesale/Distribution">Wholesale/Distribution</option>
+			</select>
 		</div>
-		<div class="media">
-			<div class="media-left">
-			<a href="#">
-			<img class="media-object" src="images/partner_sd/placeholder.jpg" alt="street London, United Kingdom U.K.">
-			</a>
+		<div class="search-btn" style="justify-content: center; display: flex;">
+				<!-- <a href="#" class="btn btn-primary" style="border-radius: 25px; padding: 10px 20px !important;">Search</a> -->
+				<!-- <button type="submit" class="btn btn-primary search has-spinner" id="search" data-btn-text="search">Search</button> -->
+
+				<!-- <button type="submit" class="btn btn-primary search has-spinner" id="search" data-btn-text="search" data-toggle="modal" data-target="#myModal">Search</button> -->
 			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Partner 3</h3>...
-			</div>
+		<!--END Industry INPUT-->
+	</div>
+	<!--START Result Display-->
+	<div class="row">
+		<!-- Company information  Display Area-->
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="scroll-box" id="result"></div>
 		</div>
-		<div class="media">
-			<div class="media-left">
-			<a href="#">
-			<img class="media-object" src="images/partner_sd/placeholder.jpg" alt="street">
-			</a>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Partner 4</h3>...
-			</div>
+		<!--Map Display Area-->
+		<div id="myMap" class="col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+			<div id="bingmap" class="bingmag1" style="width: 100%; height: 400px;"></div>
 		</div>
-		<div class="media">
-			<div class="media-left">
-			<a href="#">
-			<img class="media-object" src="images/partner_sd/placeholder.jpg" alt="India">
-			</a>
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Partner 5</h3>...
-			</div>
+		<!--Temporary Message at start-->
+		<div class="col-md-12" id="tempbox">
+			<p><br /><br />Here you can search for our Service Delivery Partners.</p>
+			
 		</div>
-			<!--END SERVICE DELIVERY PARTNERS CONTENT-->
+	</div>
+	<!--END Result Display-->
 
 </section>
-<script src="js/partner_sd.js"></script>
+<script src="js/jquery.min.js"></script><!--jQuery 1.11.3 required for displaying search results-->
+<!-- <script src="js/default.js"></script> -->
+<script src="js/partneronchange.js"></script>
+<!-- <script src="js/partnerser.js"></script> -->
+
+<script type="text/javascript">
+	var infobox;
+	var map;
+	function GetMap() {
+		map = new Microsoft.Maps.Map('#bingmap', {
+			zoom: 8
+		});
+
+		//Create window infobox in the middle of pin (not displayed)
+		infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
+			visible: false
+		});
+		//Assign infobox on variable map
+		infobox.setMap(map);
+
+	}
+</script>
+<script type='text/javascript'
+	src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ArG4NuLwgv_SRSx88GsQGzIX5NOrqfnI-Iiif6ZdcwdjNnd_dEEbNEmaRpodXdnS'
+	async defer></script>

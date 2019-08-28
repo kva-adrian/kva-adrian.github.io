@@ -14,7 +14,14 @@ $("#nav2 li").on("click", function() {
   $(this).addClass("active");
 });
 
-$(function() {
+
+    // Enables popover
+  $("[data-toggle=popover]").popover();
+
+  
+
+	
+/* $(function() {
     $('a[data-toggle="tab"]').on('click', function(e) {
         window.localStorage.setItem('activeTab', $(e.target).attr('href'));
     });
@@ -23,7 +30,7 @@ $(function() {
 		$('#addresses a[href="' + activeTab + '"]').tab('show');
         window.localStorage.removeItem("activeTab");
     }
-});
+}); */
 
 
 });
