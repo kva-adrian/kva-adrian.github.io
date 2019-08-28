@@ -457,8 +457,11 @@ nav.affix {
 }
 .carousel-caption {
     text-shadow: none;
-    padding-bottom: 14%;
     font-size: 3em;
+}
+
+.carousel-caption.middle{
+  padding-bottom:14%;
 }
 		/************* 4.2 -  Landing *************/
 .landing
