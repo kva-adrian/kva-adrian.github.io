@@ -16,7 +16,7 @@ body {
 
 h1,h2,h3,h4,h5,h6{
 	color: #0e600e;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 hr{
 	border-color: #0e600e;
@@ -96,7 +96,7 @@ blockquote.pull-right {
 .btn-kva{
   padding: 16px;
 }
-.btn-primary:hover
+.btn-primary:hover, .btn-primary:focus
 {
     border:2px solid #0e600e !important;
     background-color: #0e600e !important;
@@ -286,12 +286,8 @@ a.thumbnail:active{
 		/************* 2.6 Navigation - Navbar Inverse *************/
 .navbar-inverse{
 	background-color:#0e600e;
-	border-color:#0e600e;
-}
-
-.navbar-inverse#topNav{
-	border-bottom:3px solid #e0bf0b;
-
+  border-top-color:#0e600e;
+  border-bottom-color: #D8B446;
 }
 
 .navbar-inverse .navbar-form{
@@ -395,7 +391,9 @@ nav.affix {
   transition: all .6s ease-in-out;
   -webkit-transition: all .6s ease-in-out;
 }
-
+nav.affix-bottom{
+  position: relative;
+}
 /************* 3. Footer *************/
  .footer {
 	bottom: 0;
@@ -435,7 +433,7 @@ nav.affix {
 
 .kva-prefooter {
     width: 100%; 
-    min-height: 5px;
+    min-height: 2px;
     background-color: #D8B446; /* #e0bf0b - Cid Logo yellow*/
     text-align: center;
 }
@@ -536,6 +534,7 @@ nav.affix {
 	border:0;
 	
 }
+
 
 .no-border-radius{
 	border-radius:0;
@@ -931,7 +930,7 @@ body {
     display: inline;
   }
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #0e600e;
   }
   .navbar-default .navbar-nav .dropdown-menu > li > a {
     color: #000;

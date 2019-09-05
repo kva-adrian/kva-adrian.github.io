@@ -1,30 +1,30 @@
 {
 	"Kenya" : [
 		{
-			"companyname" : "Adrian Kenya",
-			"companyaddress" : "ISB Road, Nanakrmaguda, Gachibowli, Hyderabad,",
-			"Tel":  "040 2300 7204",
-			"Technology": "'Data Center', 'Security'",
-			"Industry": "'Healthcare', 'Service Provider', 'Wholesale/Distribution', 'Hospitality'",
-			"imgpath":"partner_sd/microsoft-logo.png",
-			"href":"https://www.kvaliteta.in",
-			"latitude": 8.524139,
-			"longitude": 76.936638,
+			"companyname" : "Ubora Systems and Solutions Limited",
+			"companyaddress" : "Mitsumi Business Park 10th Floor, P.O Box 58666 - 00100, Muthithi Road, Nairobi",
+			"Tel":  "+254 777343102",
+			"Technology": "'Solution Provider - Software', 'Security', 'Solution Provider - Hardware'",
+			"Industry": "'Telecom', 'Enterprise', 'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/ubora.jpg",
+			"href":"https://www.ubora.co.ke",
+			"latitude": -1.269824,
+			"longitude": 38.811155,
 			"color":"Green",
-			"title" : "Adrian Kenya"
+			"title" : "Ubora Systems and Solutions Limited"
 		},
 		{
-			"companyname" : "Telkom",
-			"companyaddress" : "201, Sarthik 2, Opp Rajpath Club, Bodakdev,",
-			"Tel":  "079 4893 9393",
-			"Technology": "'Colloboration', 'Enterprice Networking', 'Security'",
-			"Industry": "'Technical', 'Service Provider', 'Healthcare'",
-			"imgpath":"partner_sd/microsoft-logo.png",
-			"href":"https://www.kvaliteta.in",
-			"latitude": 18.516726,
-			"longitude": 73.856255,
+			"companyname" : "Mayreal Technologies",
+			"companyaddress" : "Nairobi",
+			"Tel":  "+254 722377349",
+			"Technology": "'Security', 'Solution Provider - Software', 'Solution Provider - Hardware'",
+			"Industry": "'Enterprise'",
+			"imgpath":"partner_sd/mayrealtech.jpg",
+			"href":"",
+			"latitude": -1.292835,
+			"longitude": 36.820734,
 			"color":"Green",
-			"title" : "Telkom"
+			"title" : "Mayreal Technologies"
 		}
 		
 	]

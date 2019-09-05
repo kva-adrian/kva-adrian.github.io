@@ -1,0 +1,17 @@
+{
+	"Nigeria" : [
+		{
+			"companyname" : "Electronet Limited",
+			"companyaddress" : "Suite 1012,First Floor, Block B, Anbeez Plaza, Opp Former CAC ,Wuse Zone 5 , Abuja Nigeria",
+			"Tel":  "+234 08063658530, +234 08093658530",
+			"Technology": "'Solution Provider - Hardware', 'Specialized Services'",
+			"Industry": "'Banking & Insurance', 'Enterprise', 'Government'",
+			"imgpath":"partner_sd/electronet.jpg",
+			"href":"http://www.electronet-ng.com/  ",
+			"latitude": 9.059460,
+			"longitude": 7.455314,
+			"color":"Green",
+			"title" : "Electronet Limited"
+		}
+		]
+}

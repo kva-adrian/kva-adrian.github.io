@@ -1,0 +1,59 @@
+{
+	"Tanzania" : [
+		{
+			"companyname" : "Komtel Payment Technologies",
+			"companyaddress" : "P.O. Box 21357, 3rd Floor, IT Plaza, Ohio & Garden Avenue, Dar es Salaam",
+			"Tel":  "+255 744 407 222",
+			"Technology": "'Solution Provider - Software', 'Security'",
+			"Industry": "'Banking & Insurance', 'Enterprise', 'Education', 'Government'",
+			"imgpath":"partner_sd/komteltech.jpg",
+			"href":"https://www.komtelgroup.africa/ ",
+			"latitude":  -6.80055556,
+			"longitude":  39.29055556,
+			"color":"Green",
+			"title" : "Komtel Payment Technologies"
+		},
+		{
+			"companyname" : "Jamii Grouped Solutions (T) Limited",
+			"companyaddress" : "Ground Floor, Jamii Building, P.O.Box 9924 Dar es salaam",
+			"Tel":  "+255 784 526 699",
+			"Technology": "'Software Automation', 'Information Technology', 'Specialized Services', 'Wired & Wireless'",
+			"Industry": "'Telecom'",
+			"imgpath":"partner_sd/jamii.jpg",
+			"href":"http://jamii-solutions.net ",
+			"latitude": -6.754751,
+			"longitude":  39.233100,
+			"color":"Green",
+			"title" : "Jamii Grouped Solutions (T) Limited"
+			
+		},
+		{
+			"companyname" : "Cyclo Technologies Limited",
+			"companyaddress" : "Plot No. 2656 Kirando Street, Mbezi Beach, Dar Es Salaam",
+			"Tel":  "+255 762 748 672",
+			"Technology": "'Consultancy Services', 'Software Development'",
+			"Industry": "'Government', 'Enterprise', 'Banking & Insurance', 'SME'",
+			"imgpath":"partner_sd/cyclotechnology.jpg",
+			"href":"https://www.cyclo.co.tz/",
+			"latitude": -6.775023,
+			"longitude": 39.203553,
+			"color":"Green",
+			"title" : "Cyclo Technologies Limited"
+			
+		},
+		{
+			"companyname" : "The Copy Cat Tanzania Limited",
+			"companyaddress" : "Rkd Plaza, Plot No. 39A | New Bagamoyo Road Victoria, P. O. Box 1599, Dar es Salaam",
+			"Tel":  "+255 22 2165555, +255 755 996699",
+			"Technology": "'Solution Provider - Hardware', 'Software Automation', 'Solution Provider - Software', 'Security'",
+			"Industry": "'Banking & Insurance', 'Power', 'Government'",
+			"imgpath":"partner_sd/copycat.jpg",
+			"href":"https://www.copycatgroup.com",
+			"latitude": -6.778446,
+			"longitude": 39.252059,
+			"color":"Green",
+			"title" : "The Copy Cat Tanzania Limited"
+			
+		}
+	]
+}

@@ -1,0 +1,1 @@
+Css files acc and animates for vertical accordian slider

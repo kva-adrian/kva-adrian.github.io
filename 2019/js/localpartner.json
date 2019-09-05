@@ -1,0 +1,42 @@
+{
+        "country": "Kenya",
+        "industry": "Government",
+        "company": "Johnson, Johnson and Partners, LLC CMP DDC",
+        "technology": "Software,Data Centers"
+    },
+    {
+        "country": "Kenya",
+        "industry": "Telecom",
+        "company": "Sealoud",
+        "technology": "VSAT,Cloud"
+    },
+    {
+        "country": "Rwanda",
+        "industry": "Finance",
+        "company": "Velity",
+        "technology": "Software,hardware"
+    },
+    {
+        "country": "Ethiopia",
+        "industry": "Government",
+        "company": "Geekko",
+		"technology": "Hardware"
+    },
+    {
+        "country": "Tanzania",
+        "industry": "Security",
+        "company": "Suretech",
+		"technology": "Cameras"
+    },
+	{
+        "country": "Ethiopia",
+        "industry": "Government",
+        "company": "Corepan",
+		"technology": "Software"
+    },
+	{
+        "country": "Kenya",
+        "industry": "Education",
+        "company": "ICSGreek",
+		"technology": "Software"
+    }

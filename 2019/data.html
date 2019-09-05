@@ -1,0 +1,55 @@
+<div id="page-wrap">
+		
+		<h1>Pulls from JSON</h1>
+
+		<select id="json-one">
+			<option selected value="base">Please Select</option>
+			<option value="country">Kenya</option>
+			<option value="technology">TEch</option>
+		</select>
+	
+		<br />
+	
+		<select id="json-two">
+			<option>Please choose from above</option>
+		</select>
+	
+	</div>
+		<script>
+		$(function() {
+			
+			$("#json-one").change(function() {
+			
+				var countriesList = 'js/countries.json';
+				var industryList = 'js/industry.json';
+				var localpartnerList = 'js/localpartner.json';
+				var dataList = 'js/data.json';
+				var $dropdown = $(this);
+			
+				$.getJSON(localpartnerList, function(data) {
+				
+					var key = $dropdown.val();
+					var vals = [];
+										
+					switch(key) {
+						case 'country':
+							vals = data.industry.split(",");
+							break;
+						case 'technology':
+							vals = data.technology.split(",");
+							break;
+						case 'base':
+							vals = ['Please choose from above'];
+					}
+					
+					var $jsontwo = $("#json-two");
+					$jsontwo.empty();
+					$.each(vals, function(index, value) {
+						$jsontwo.append("<option>" + value + "</option>");
+					});
+			
+				});
+			});
+
+		});
+	</script>

@@ -3,15 +3,39 @@
 </head>
 <!-- SP-IT - Landing -->
 <section class="landing" id="serviceprovider">
+
 	<div class="row">
-		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-			<h1 class="text-right visible-lg hidden-md hidden-sm hidden-xs">
-				<br><br><br>ASSISTING <br>SERVICE PROVIDERS <br>TO EMPOWER BUSINESSES</h1>
-			<h1 class="text-center visible-md-block visible-sm-block visible-xs-block">CASSISTING SERVICE PROVIDERS TO
-				EMPOWER BUSINESSES</h1>
-		</div>
-		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-			<img class="img-responsive" src="images/sp-it_diagram.png" alt="Service Provider Offerings">
+		<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			<img class="img-responsive" width="100%" height="100%" src="images/sp-it_diagram.png"
+				alt="Service Provider Offerings" usemap="#sp-map">
+			<map name="sp-map">
+				<area class="externalModal" alt="ioe" href="spit_ioe.html" coords="0,0,356,53" shape="rect">
+				<area class="externalModal" alt="access" href="spit_access.html" coords="358,0,713,53" shape="rect">
+				<area class="externalModal" alt="security" href="spit_security.html" coords="715,0,1076,53" shape="rect">
+				<area class="externalModal" alt="bss" href="spit_ossbss.html" coords="1078,0,1436,53" shape="rect">
+				<area alt="cpe" href="#verdant" coords="0,611,356,658" shape="rect">
+				<area class="externalModal" alt="distr" href="distr" coords="358,611,715,658" shape="rect" data-toggle="tab">
+				<area class="externalModal" alt="core"  href="core" coords="717,611,1073,658" shape="rect" data-toggle="tab">
+				<area class="externalModal" alt="hosted applications" href="happ" coords="1076,611,1436,658" shape="rect"
+					data-toggle="tab">
+			</map>
 		</div>
 	</div>
+	<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-kva" role="document">
+			<div class="modal-content">
+				
+			</div>
+		</div>
+	</div>
+
 </section>
+<script>
+$('.externalModal').on('click', function(e){
+      e.preventDefault();
+      $('#theModal').modal('show').find('.modal-content').load($(this).attr('href'));
+    });
+</script>
+<script>
+		$('map').imageMapResize();
+	</script>

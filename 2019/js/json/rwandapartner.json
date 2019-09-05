@@ -1,56 +1,30 @@
 {
 	"Rwanda" : [
 		{
-			"companyname" : "Copycat Rwanda",
-			"companyaddress" : "ISB Road, Nanakrmaguda, Gachibowli, Hyderabad,",
-			"Tel":  "040 2300 7204",
-			"Technology": "'Routing', 'Data Center', 'Enterprice Networking', 'Security'",
-			"Industry": "'Education', 'Healthcare', 'Hospitality', 'Financial Services'",
-			"imgpath":"partner_sd/microsoft-logo.png",
-			"href":"https://www.kvaliteta.in",
-			"latitude": -1.935114,
-			"longitude": 30.082111,
+			"companyname" : "Ubora Systems and Solutions Limited",
+			"companyaddress" : "Nyarugenge, Nyarugenge, umujyi wa Kigal,i Rwanda",
+			"Tel":  "+2500785797222",
+			"Technology": "'Solution Provider - Software', 'Security', 'Solution Provider - Hardware'",
+			"Industry": "'Telecom', 'Enterprise', 'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/ubora.jpg",
+			"href":"https://www.ubora.co.ke",
+			"latitude": -1.807394,
+			"longitude": 30.138200,
 			"color":"Green",
-			"title" : "Adrian Kenya"
+			"title" : "Ubora Systems and Solutions Limited"
 		},
 		{
-			"companyname" : "Ubora Rwanda",
-			"companyaddress" : "101, East street, Opp Rajpath Club, Batna,",
-			"Tel":  "023 4893 9393",
-			"Technology": "'Colloboration', 'Data Center', 'Enterprice Networking', 'Security'",
-			"Industry": "'Healthcare', 'Service Provider', 'Retail'",
-			"imgpath":"partner_sd/microsoft-logo.png",
-			"href":"https://www.kvaliteta.in",
-			"latitude": -1.946944,
-			"longitude": 31.08211,
+			"companyname" : "The Copy Cat Rwanda Private Ltd",
+			"companyaddress" : "Kubaho Plaza, 2nd Floor, Street No: KG 544 St, P.O.BOX 2531, Kigali, Rwanda",
+			"Tel":  "+250788690699",
+			"Technology": "'Solution Provider - Hardware', 'Software Automation', 'Solution Provider - Software', 'Security'",
+			"Industry": "'Banking & Insurance', 'Service Provider', 'Government'",
+			"imgpath":"partner_sd/copycat.jpg",
+			"href":"https://www.copycatgroup.com",
+			"latitude": -1.947230,
+			"longitude": 30.093027,
 			"color":"Green",
-			"title" : "Adrian Kenya"
-		},
-		{
-			"companyname" : "KTRN",
-			"companyaddress" : "403, South road, Opp Rajpath Club, Bamakv,",
-			"Tel":  "019 4893 9393",
-			"Technology": "'Colloboration', 'Data Center', 'Enterprice Networking', 'Security'",
-			"Industry": "'Wireless', 'Manufacturing', 'Wholesale/Distribution', 'Healthcare'",
-			"imgpath":"partner_sd/microsoft-logo.png",
-			"href":"https://www.kvaliteta.in",
-			"latitude": -1.956944,
-			"longitude": 32.08211,
-			"color":"Green",
-			"title" : "Adrian Kenya"
-		},
-		{
-			"companyname" : "Broadband SFS Corporation",
-			"companyaddress" : "801, Sarthik 2, Opp Rajpath Club, Bodakdev,",
-			"Tel":  "012 4893 9393",
-			"Technology": "'Colloboration', 'Data Center', 'Enterprice Networking', 'Security'",
-			"Industry": "'Technical Services', 'Service Provider', 'Wholesale/Distribution'",
-			"imgpath":"partner_sd/microsoft-logo.png",
-			"href":"https://www.kvaliteta.in",
-			"latitude": -2.986944,
-			"longitude": 33.08211,
-			"color":"Green",
-			"title" : "Adrian Kenya"
+			"title" : "The Copy Cat Rwanda Private Ltd"
 		}
 		
 	]

@@ -124,6 +124,63 @@ $('select.mydrop').change(function(){
 					$('#myMap').show();
 					});	
 				}
+			//Tanzania
+				if(country == "Tanzania")
+				{
+				$.getJSON("js/json/tanzaniapartner.json", function(response){
+					let loc='';
+					const tanzaniaLatLongs = [];
+					$.each(response.Tanzania, function(det,item){
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						tanzaniaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						
+					});
+					createPushPins(tanzaniaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}
+			
+			//Nigeria
+				
+				if(country == "Nigeria")
+				{
+				$.getJSON("js/json/nigeriapartner.json", function(response){
+					let loc='';
+					const nigeriaLatLongs = [];
+					$.each(response.Nigeria, function(det,item){
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						nigeriaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						
+					});
+					createPushPins(nigeriaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}	
+
 
 		//End filter based on country only
 
@@ -160,21 +217,16 @@ $('select.mydrop').change(function(){
 									
 					}	
 					
-					else(response.length<0)
-					{
-						$('#result').html('No Records Found').show();
-						$('#myMap').hide();
-					}	
-						
+
 					});
 					createPushPins(indiatechLatLongs);
 					$('#result').html(loc).show();
 					$('#myMap').show();
 					
-					
 					});	
 					
 				}
+					
 
 			//kenya		
 
@@ -208,6 +260,7 @@ $('select.mydrop').change(function(){
 					$('#myMap').show();
 					});	
 				}
+								
 
 			//Rwanda
 
@@ -240,6 +293,7 @@ $('select.mydrop').change(function(){
 					});	
 				}
 
+
 			//Ethiopia
 
 				if(country == "Ethiopia" && selectedtech != "Select")
@@ -271,6 +325,69 @@ $('select.mydrop').change(function(){
 					$('#myMap').show();
 					});	
 				}
+
+			//Tanzania
+				
+				if(country == "Tanzania" && selectedtech != "Select")
+				{
+				$.getJSON("js/json/tanzaniapartner.json", function(response){
+					let loc='';
+					const tanzaniaLatLongs = [];
+					$.each(response.Tanzania, function(det,item){
+						if(item.Technology.includes(selectedtech))
+						{
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						tanzaniaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						}
+						
+					});
+					createPushPins(tanzaniaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}
+			//Nigeria
+				
+				if(country == "Nigeria" && selectedtech != "Select")
+				{
+				$.getJSON("js/json/nigeriapartner.json", function(response){
+					let loc='';
+					const nigeriaLatLongs = [];
+					$.each(response.Nigeria, function(det,item){
+						if(item.Technology.includes(selectedtech))
+						{
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						nigeriaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						}
+						
+					});
+					createPushPins(nigeriaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}	
 		//end filter based on country with technology
 
 
@@ -315,7 +432,7 @@ $('select.mydrop').change(function(){
 				if(country == "Kenya" && selectedindustry != "Select")
 				{
 					
-					$.getJSON("js/json/Kenyapartner.json", function(response){
+					$.getJSON("js/json/kenyapartner.json", function(response){
 					let loc='';
 					const kenyaindusLatLongs = [];
 					$.each(response.Kenya, function(det,item){
@@ -404,6 +521,69 @@ $('select.mydrop').change(function(){
 					$('#myMap').show();
 					});	
 				}
+
+			//Tanzania
+				
+				if(country == "Tanzania" && selectedindustry != "Select")
+				{
+				$.getJSON("js/json/tanzaniapartner.json", function(response){
+					let loc='';
+					const tanzaniaLatLongs = [];
+					$.each(response.Tanzania, function(det,item){
+						if(item.Industry.includes(selectedindustry))
+						{
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						tanzaniaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						}
+						
+					});
+					createPushPins(tanzaniaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}
+			//Nigeria
+				
+				if(country == "Nigeria" && selectedindustry != "Select")
+				{
+				$.getJSON("js/json/nigeriapartner.json", function(response){
+					let loc='';
+					const nigeriaLatLongs = [];
+					$.each(response.Nigeria, function(det,item){
+						if(item.Industry.includes(selectedindustry))
+						{
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						nigeriaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						}
+						
+					});
+					createPushPins(nigeriaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}	
 		//End filter based on country with technology
 
 
@@ -447,11 +627,11 @@ $('select.mydrop').change(function(){
 				if(country == "Kenya" && selectedtech != "Select" && selectedindustry != "Select")
 				{
 					
-					$.getJSON("js/json/Kenyapartner.json", function(response){
+					$.getJSON("js/json/kenyapartner.json", function(response){
 					let loc='';
 					const kenyatechindusLatLongs = [];
 					$.each(response.Kenya, function(det,item){
-						if(item.Technology.contains(selectedtech) && item.Industry.contains(selectedindustry))
+						if(item.Technology.includes(selectedtech) && item.Industry.includes(selectedindustry))
 						{
 						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
 						kenyatechindusLatLongs.push(latLngObj);
@@ -536,6 +716,69 @@ $('select.mydrop').change(function(){
 					$('#myMap').show();
 					});	
 				}
+
+			//Tanzania
+				
+				if(country == "Tanzania" && selectedtech != "Select" && selectedindustry != "Select")
+				{
+				$.getJSON("js/json/tanzaniapartner.json", function(response){
+					let loc='';
+					const tanzaniaLatLongs = [];
+					$.each(response.Tanzania, function(det,item){
+						if(item.Technology.includes(selectedtech) && item.Industry.includes(selectedindustry))
+						{
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						tanzaniaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						}
+						
+					});
+					createPushPins(tanzaniaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}
+			//Nigeria
+				
+				if(country == "Nigeria" && selectedtech != "Select" && selectedindustry != "Select")
+				{
+				$.getJSON("js/json/nigeriapartner.json", function(response){
+					let loc='';
+					const nigeriaLatLongs = [];
+					$.each(response.Nigeria, function(det,item){
+						if(item.Technology.includes(selectedtech) && item.Industry.includes(selectedindustry))
+						{
+						let latLngObj = {lat:item.latitude,long:item.longitude, title:item.title}
+						nigeriaLatLongs.push(latLngObj);
+						loc+='<div class="row">';
+						loc+='<div class="panel panel-default">';
+						loc+='<div class="panel-body">';
+						loc+='<div class="col-xs-4">';
+						loc+='<a href="'+item.href+'" target="_blank">';
+						loc+='<img src="images/'+item.imgpath+'" class="img-responsive" alt="'+item.companyname+'_logo"/>';
+						loc+='</a>';
+						loc+='</div>';//close col-xs-4
+						loc+='<div class="col-xs-8"><b>'+item.companyname+'</b><br/>'+item.companyaddress+'<br/>Tel: '+item.Tel+'</div>';
+						loc+='</div></div>';//close panel-body and panel-default
+						loc+='</div>';
+						}
+						
+					});
+					createPushPins(nigeriaLatLongs);
+					$('#result').html(loc).show();
+					$('#myMap').show();
+					});	
+				}	
 
 		//End filter based on country with technology and indutry
 		
