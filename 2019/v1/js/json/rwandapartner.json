@@ -1,0 +1,31 @@
+{
+	"Rwanda" : [
+		{
+			"companyname" : "Ubora Systems and Solutions Limited",
+			"companyaddress" : "Nyarugenge, Nyarugenge, umujyi wa Kigal,i Rwanda",
+			"Tel":  "+2500785797222",
+			"Technology": "'Solution Provider - Software', 'Security', 'Solution Provider - Hardware'",
+			"Industry": "'Telecom', 'Enterprise', 'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/ubora.jpg",
+			"href":"https://www.ubora.co.ke",
+			"latitude": -1.807394,
+			"longitude": 30.138200,
+			"color":"Green",
+			"title" : "Ubora Systems and Solutions Limited"
+		},
+		{
+			"companyname" : "The Copy Cat Rwanda Private Ltd",
+			"companyaddress" : "Kubaho Plaza, 2nd Floor, Street No: KG 544 St, P.O.BOX 2531, Kigali, Rwanda",
+			"Tel":  "+250788690699",
+			"Technology": "'Solution Provider - Hardware', 'Software Automation', 'Solution Provider - Software', 'Security'",
+			"Industry": "'Banking & Insurance', 'Service Provider', 'Government'",
+			"imgpath":"partner_sd/copycat.jpg",
+			"href":"https://www.copycatgroup.com",
+			"latitude": -1.947230,
+			"longitude": 30.093027,
+			"color":"Green",
+			"title" : "The Copy Cat Rwanda Private Ltd"
+		}
+		
+	]
+}

@@ -1,0 +1,1260 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i');
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+   /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.container {
+	width:95%;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #0e600e;
+    font-family: 'Fira Sans', sans-serif;
+}
+hr{
+	border-color: #0e600e;
+}
+ul, li {
+  list-style: none;
+}
+
+a, a:focus, a:hover{
+  color:#0e600e;
+}
+
+section {
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+section.top-space {
+	padding-top:3%;
+}
+
+section ul li:before {
+  content: '';
+  font-family: '';
+  float: left;
+}
+
+/* section ul li{
+	
+} */
+
+section ul li i{
+	color: #0e600e;
+	text-indent:-1em;
+}
+
+.page-header{
+	border-bottom: 1px solid #0e600e;
+}
+/*************  BLOCKQUOTE *************/
+blockquote{
+	border-left-color:#0e600e;
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+	border-right-color: #0e600e;
+}
+
+/*************  Buttons *************/
+.btn{
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+.btn-default
+{
+    border:2px solid #0e600e !important;
+    background-color: #0e600e;
+    color: #fff;
+
+}
+.btn-default:hover
+{
+    border:2px solid #0e600e !important;
+    background-color: #fff !important;
+    color: #0e600e !important;
+}
+
+.btn-primary
+{
+    border:2px solid #0e600e !important;
+    background-color: #fff;
+    color: #0e600e;
+}
+
+.btn-kva{
+  padding: 16px;
+}
+.btn-primary:hover, .btn-primary:focus
+{
+    border:2px solid #0e600e !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+}
+
+.btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary{
+  background-color: #0e600e;
+}
+.btn-transparent
+{
+    border:2px solid #fff !important;
+    background-color: transparent;
+    color: #fff;
+
+}
+.btn-transparent:hover
+{
+    border:2px solid #fff !important;
+    background-color: #fff !important;
+    color: #0e600e !important;
+}
+.btn-search
+{
+    border:1px solid #fff !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+}
+.btn-search:hover
+{
+    border:1px solid #fff !important;
+    background-color: #0e600e !important;
+    color: #fff !important;
+}
+/*************  CANVAS *************/
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+svg{
+  max-width: 100%;
+}
+
+/*************  Form *************/
+.form-control{
+	border-radius:0;
+}
+
+/*************  THUMBNAIL *************/
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail:active{
+	border-color:#0e600e; 
+}
+
+.thumbnail {
+	border-radius:0;
+}
+
+
+.thumbnail .caption-slide h3, 
+.carousel .caption-slide h3 {
+  color:#FFFFFF !important;
+  
+}
+
+.thumbnail .caption-slide blockquote,
+.carousel .caption-slide blockquote
+{
+  border-left-color:#FFFFFF;
+}
+
+.thumbnail .caption-slide .blockquote-reverse,
+.carousel .caption-slide .blockquote-reverse
+{
+  border-right-color:#FFFFFF;
+}
+
+.thumbnail .caption-slide, .carousel .caption-slide {
+  position:absolute;
+  top:0;
+  left:0;
+  color:#FFFFFF !important;
+  /* z-index:2; */
+  width:100%;
+  height:100%;
+  padding:10px;
+  display:none;
+}
+.overlay-dark{
+  background-color:rgba(0,0,0,0.6);
+}
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+/************* HOVER ZOOM *************/
+.hover-zoom:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: all .5s;
+  z-index:1;
+}
+
+/************* 2 NAVIGATION *************/
+	/************* 2.1 Navigation - General *************/
+.navbar{
+	min-height:20px;
+}
+
+
+
+	/************* 2.2 Navigation - Logo Branding *************/
+		/**********************************
+		Responsive navbar-brand image CSS
+		- Remove navbar-brand padding for Firefox bug workaround
+		- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+		***********************************/
+.navbar-brand {
+	padding: 0px;
+	height:auto;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 5px 15px;
+  width: auto;
+} 
+
+	/************* 2.3 Navigation - Link Formatting *************/
+
+.navbar ul.nav li a {
+    color: #000;
+    font-size: 16px;
+    vertical-align: middle;
+	padding-bottom:5px;
+  padding-top:20px;
+  text-align: center;
+}
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
+    color: #0e600e !important;
+}
+#nav2 .nav li.active > a, #nav2 .nav li.open > a {
+    color: #0e600e;
+    background: transparent !important;
+}
+
+		/************* 2.4 Navigation - Sub Menu Pills Formatting *************/
+#nav-lower {
+  width: 100%;
+  margin-bottom:0px;
+  border-top-color:#000;
+  border:1px !important;
+  
+}
+#nav-lower .nav li a {
+    font-size: 14px;
+	padding:8px 10px;
+	border-radius:0px;
+}
+#nav-lower .nav li a:hover, #nav-lower .nav li a:focus {
+    color: #0e600e !important;
+}
+#nav-lower .nav li.active > a, #nav-lower .nav li.open > a {
+    color: #fff !important;
+    background: #0e600e !important;
+}
+
+		/************* 2.5 Navigation - Search Bar/Forms *************/
+ 
+.navbar-form .input-group > .form-control{
+    height: 25px;
+	border-radius:0px;
+	border:none;
+}
+
+.navbar-form .input-group .input-group-btn > .btn {
+	height: 25px;
+	border-color:#0e600e;
+	background-color:#0e600e;
+	color:#0e600e;
+	border-radius:0px;
+	padding-top:3px
+ }
+ 
+#searchbar .navbar-form{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+		/************* 2.6 Navigation - Navbar Inverse *************/
+.navbar-inverse{
+	background-color:#0e600e;
+  border-top-color:#0e600e;
+  border-bottom-color: #D8B446;
+}
+
+.navbar-inverse .navbar-form{
+	border-color: #0e600e;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:#fff !important;
+	
+}
+.navbar-inverse ul.nav li a:hover, 
+.navbar-inverse ul.nav li a:focus {
+    color: #fff !important;
+}
+.navbar-inverse #navbar-collapse-search .navbar-nav > li > a {
+	padding-top:8px;
+	padding-bottom:8px;
+	
+}
+
+.nav-pills > li > a{
+  border-radius:0;
+}
+
+.nav-pills > li.active > a.btn-primary, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+  color:#fff;
+  background-color:#0e600e;
+  
+}
+
+.nav-sidebar .list-group-item {
+  border-radius:0;
+}
+
+.nav-sidebar.list-group > li.active > a, .nav-sidebar.list-group > li.active > a:focus, .nav-sidebar.list-group > li.active > a:hover{
+  color:#fff;
+  background-color:#0e600e;
+  
+}
+
+	/************* 2.7 Navigation - Dropdown *************/
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;
+   margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;
+   -moz-border-radius:0 6px 6px 6px;
+   border-radius:0 6px 6px 6px;
+   z-index:1000;
+ }
+  
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-toggle{
+	border-color:#0e600e;
+}
+
+	/************* 2.8 Navigation - Dual Navbars for one fixed, one scrolls *************/
+ 
+
+ #topNav, #nav2 {
+  margin-bottom:0;
+}
+
+nav {
+  width: 100%;
+}
+
+nav.affix-top {
+  position: absolute;
+}
+
+nav.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+}
+nav.affix-bottom{
+  position: relative;
+}
+/************* 3. Footer *************/
+ .footer {
+	bottom: 0;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+ .kva-footer {
+    margin:0px auto;
+    width:100%;
+    height:50px;
+    background-color:#000;
+    float:left;
+    padding-bottom:20px;
+    position: relative;
+    z-index: 10;
+}
+.kva-footer:after {
+    background-color: #0e600e;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.kva-footer p{
+    text-align:center;
+	margin-top: 5px;
+    color: #fff; 
+    font-size: 14px;
+    word-spacing: 4px;
+}
+
+.kva-prefooter {
+    width: 100%; 
+    min-height: 2px;
+    background-color: #D8B446; /* #e0bf0b - Cid Logo yellow*/
+    text-align: center;
+}
+/************* 4. Content *************/
+			/************* 4.1 Carousel *************/
+ .overlay {
+    background-color: rgba(0,0,0,0.4);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	top:0;
+    left:0;
+}
+
+.carousel{
+	margin-top:20px;
+	z-index: 0
+}
+.carousel-caption {
+    text-shadow: none;
+    font-size: 3em;
+}
+
+.carousel-caption.middle{
+  padding-bottom:14%;
+}
+		/************* 4.2 -  Landing *************/
+.landing
+{
+	padding-top:30px;
+}
+
+
+ .jumbotron{
+	margin-bottom: 0px;
+	border-radius:0 !important;
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    top:0;
+    left:0;
+	padding-top:15%;
+	padding-bottom:15%;
+	background-position: center;
+	background-repeat: no-repeat;
+	color:white;
+
+}
+
+.minimum-padding .jumbotron{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+.landing .jumbotron h1,
+.landing .jumbotron h2,
+.landing .jumbotron h3,
+.landing .jumbotron p,
+.landing .jumbotron span{
+	color:#fff;
+}
+.landing .jumbotron p,
+.landing .jumbotron span{
+	font-size:initial;
+}
+
+.minimum-padding .jumbotron p{
+	font-size:16px;
+}
+
+#sdaas .jumbotron {
+    background-image: url("../images/sdaas_landing_team.jpg");
+}
+#enterprise-it .jumbotron {
+    background-image: url("../images/ent-it_landing_pyramid.jpg");
+} 
+/* #serviceprovider .jumbotron {
+    background-image: url("../images/sp-it_landing_diagram.jpg");
+}  */
+/* #partnering.landing .jumbotron {
+    background-image: url("../images/sdaas-landing-team.jpg");
+}*/ 
+#aboutus .jumbotron {
+  background-image: url("../images/technophase3.jpg");
+  padding-top:8%;
+  padding-bottom:8%;
+} 
+#wired-intro {
+    background-image: url("../images/sp-it_wired_fiber.jpg");
+} 
+#verdant-intro {
+    background-image: url("../images/sp-it_verdant.jpg");
+} 
+		/************* 4.3 -  Section Content *************/
+.no-border{
+	border:0;
+	
+}
+
+
+.no-border-radius{
+	border-radius:0;
+	
+}
+.border-right{
+	border-top:0;
+	border-right:1px;
+	border-bottom:0;
+	border-left:0;
+	
+}
+.border-left{
+	border-top:0;
+	border-right:0;
+	border-bottom:0;
+	border-left:1px;
+	
+}
+
+.plainbox, .greenbox, .scroll-box{
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);
+}
+
+.plainbox, .greenbox{
+  padding:20px;
+}
+.greenbox
+{
+	border: 2px solid #0e600e !important;
+}
+
+.scroll-box{
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+		/*************  4.4 - PANELS *************/
+.panel-group .panel{
+	border-radius:0;
+}
+
+.panel{
+	box-shadow:none;
+}	
+
+.panel-padded{
+	margin-top:15%;
+	margin-bottom:15%;
+}
+.panel-kvaliteta{
+	margin-top:0;
+	margin-bottom:0;
+	height:100%;
+}
+.panel-darkish{
+	background-color:rgba(0,0,0,0.7);
+}
+
+.panel-kvaliteta .list-group li{
+	padding-left:2em;
+}
+	
+.panel-kvaliteta .list-group{
+	padding-left:0em;
+}
+
+.panel-kvaliteta ul{
+  border: 1px solid rgba(14,96,14,1);
+}
+
+.panel-kvaliteta .panel-body{
+  border: 1px solid rgba(14,96,14,1);
+}
+.panel-kvaliteta h4{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.cards .panel{
+	min-height:400px;
+	padding-top:80px;
+}
+
+.cards .panel-heading{
+	background-color:#fff;
+}
+.cards .panel-heading, .cards .panel-heading h3 {
+	color:inherit;
+}
+.cards .panel-body {
+	color:initial;
+}
+.cards .panel-hover:hover
+{
+    box-shadow: 3px 3px 10px 3px !important;
+}
+
+.panel-heading{
+	border-radius:0;
+	background-color:#0e600e;
+  border-color:#0e600e;
+}
+.panel-heading h2{
+  color:#fff;
+  
+}
+#accordion .panel-heading{
+  background: rgba(14,96,14,1);
+  background: -moz-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(14,96,14,1)), color-stop(12%, rgba(14,96,14,1)), color-stop(85%, rgba(54,156,54,1)), color-stop(100%, rgba(60,163,60,1)));
+  background: -webkit-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: -o-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: -ms-linear-gradient(left, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  background: linear-gradient(to right, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e600e', endColorstr='#3ca33c', GradientType=1 );
+}
+
+
+
+.panel-kvaliteta > .panel-heading > .panel-title, 
+.panel-kvaliteta > a .panel-title{
+  color:#fff;
+  text-decoration:none;
+}
+
+.panel ul li i{
+	/* padding-left:1em; */
+	text-indent:-1em;
+}
+
+.panel-heading > .panel-title h1,
+.panel-title h2,
+.panel-title h3,
+.panel-title h4,
+.panel-title h5,
+.panel-title h6{
+	color:#fff;
+	
+}
+a .panel-title{
+  text-decoration: none;
+}
+a .panel-title ,a .panel-title:active {
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.accordion-toggle .panel-heading :after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings'; 
+  content: "\e114";
+  float: right;
+  vertical-align: middle;
+  transition: all 0.5s;
+}
+.accordion-toggle.collapsed .panel-heading :after  {
+ -webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+
+.panel > .list-group .list-group-item:last-child{
+  margin-bottom:0px;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+  color: #fff;
+background-color: #0e600e;
+border-color: #0e600e;
+}
+.list-group-item{
+  border: 1px solid #0e600e;
+}
+.list-group-item:first-child, .list-group-item:last-child{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-bottom:-1px;
+
+}
+
+.div-parallelo {
+  position: relative;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin-bottom:0.2em;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.div-parallelo:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to right, rgba(14,96,14,1) 0%, rgba(14,96,14,1) 12%, rgba(54,156,54,1) 85%, rgba(60,163,60,1) 100%);
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(-28deg,0deg);
+  -ms-transform: skew(-28deg,0deg);
+  transform: skew(-28deg,0deg);
+  z-index: -1;
+}
+
+.div-parallelo h4{
+  margin-top: 0px;
+  margin-bottom:0px;
+  color: #FFFFFF;
+}
+/**************4.8  Modal**************************/
+.modal{
+  z-index: 10000 !important;
+}
+.modal-dialog.modal-dialog-kva{
+  width:100%;
+}
+
+.modal-body .modal-body-kva{
+  padding:5px;
+}
+
+.modal-header .modal-header-kva{
+  padding:5px;
+  border-bottom:none;
+}
+/*for Modal left and right*/
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 500px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+/**Modal Left**/
+.modal.left.fade .modal-dialog{
+  left: -320px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+          transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog{
+  left: 0;
+}
+      
+/**Modal Right**/
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+}
+/**************4.8  Gallery**************************/
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-sizer {
+  width: 275px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+/************* . Shine *************/
+.shine {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  z-index: 995;
+}
+
+/**
+ * The "shine" elements
+ */
+
+.shine:after {
+  animation: shine 4s ease-in-out  infinite;
+  animation-fill-mode: forwards;  
+  content: "";
+  position: absolute;
+  bottom: -210%;
+  left: -310%;
+  width: 200%;
+  height: 50%;
+  opacity: 0;
+  transform: rotate(40deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.3) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+
+/* Active state */
+
+.shine:active:after {
+  opacity: 0;
+}
+
+@keyframes shine{
+  to {
+    opacity: 1;
+    top: -50%;
+    left: 0;
+    transition-property: left, bottom, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+}
+
+/************* 6. Approach *************/
+
+.iconbox-content
+{
+    color:#0e600e !important;
+}
+
+.iconbox-content i 
+{
+    margin-top:5%;
+}
+.iconbox-content i.fa-border{
+	border-color:#0e600e;
+}
+
+.iconbox-content div span
+{
+    margin-bottom:5%;
+}
+
+.table-icon{
+	color:#0e600e;
+}
+/**********
+7. Contact
+**********/
+
+
+.contact-text
+{
+	border:none;
+	max-width:100%;
+	padding-top:15%;
+	padding-bottom:14%;
+	padding-left:10%;
+	padding-right:10%;
+	-webkit-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+}
+.contact-text p
+{
+    color: #000 !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+/************* TABLET - PORTRAIT or SMALLER SCREENS *************/
+@media (min-width: 600px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+  #navbar {
+    text-align: center;
+  }
+footer{
+	position:absolute;
+}
+}  
+@media(min-width: 768px) and (max-width: 1024px){
+
+/************* 2. Tablets - Navigation *************/
+	/************* 2.2 Navigation - Main Menu *************/  
+.navbar ul.nav li a {
+    font-size: 12px;
+	padding-left: 5px;
+	padding-right:5px;
+}
+
+/*************  4. Tablet - Content *************/
+
+		/*************  4.1 Tablet - Carousel *************/
+.carousel-caption {
+    text-shadow: none;
+    padding-bottom: 15%;
+    font-size: 2em;
+}
+.carousel-indicators {
+	bottom:-10px;
+}
+
+.carousel-indicators li {
+	height:7px;
+	width:7px;
+}
+.carousel-indicators .active{
+	height:9px;
+	width:9px;
+}
+
+.right.carousel-control .glyphicon, 
+.left.carousel-control .glyphicon
+{
+     visibility:hidden;
+}
+.contact-text
+{
+	-webkit-box-shadow: inset 0px -5px 10px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -5px 10px -3px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -5px 10px -3px rgba(0,0,0,0.75);
+}
+		/*************  4.2 Tablet - Jumbotron *************/
+/* .jumbotron.banner{
+	height:300px;
+}
+
+.jumbotron-text{
+	padding-top:12%;
+} */
+
+#section-content.list-group{
+	text-align:center;
+	
+}
+
+
+		/*************  4.4 Tablet - Panels *************/
+
+.panel{
+	margin-top:0;
+	margin-bottom:3%;
+}	
+
+.panel-kvaliteta{
+	border: 2px solid #0e600e;
+	margin-top:0;
+	margin-bottom:0;
+	height:100%;
+}
+
+.panel-kvaliteta .list-group{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+
+
+}/*end of TABLET - PORTRAIT STYLE*/
+
+/************* TABLET - LANDSCAPE *************/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+		/********** Tablet LS - 7. Approach **********/
+		
+footer{
+	position:absolute;
+}
+
+/* .iconbox-content
+{
+}	 */
+
+		/********** Tablet LS - 7. Contact **********/
+.contact-text
+{
+	padding-top:8%;
+	padding-bottom:7%;
+	-webkit-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+}
+
+}
+
+/************ MOBILE *************/
+@media screen and (max-width: 600px) {
+
+body {
+  padding-top: 0;
+}
+
+/************* 2. Mobile - Navigation *************/
+	/************* 2.2 Navigation - Main Menu *************/
+.navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #0e600e;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #000;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+   
+   .navbar ul.nav li a.visible-xs{
+	   display:inline-block !important;
+   }
+
+/*************  4. Mobile - Content *************/
+
+		/*************  4.1 MOBILE - Carousel *************/
+#myCarousel {
+
+  width: 100%;
+}
+  /* NEEDS FIXING FOR MOBILE */
+/*  .carousel-inner > .item {
+  width: 100%;
+  height: 250px;
+} 
+
+.carousel-inner > .item > a > img, 
+.carousel-inner > .item > img, 
+.img-responsive, .thumbnail a > img, 
+.thumbnail > img{
+	position: absolute;
+	background-size: cover;
+	 background-size: cover;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+	
+} */
+.carousel-caption {
+    text-shadow: none;
+    padding-bottom: 8%;
+    font-size: 1em;
+}
+.carousel-indicators {
+	bottom:-10px;
+}
+
+.carousel-indicators li {
+	height:5px;
+	width:5px;
+}
+.carousel-indicators .active{
+	height:7px;
+	width:7px;
+}
+
+.right.carousel-control .glyphicon, 
+.left.carousel-control .glyphicon
+{
+     visibility:hidden;
+}
+			
+			/*************  4.2 Mobile - Jumbotron *************/
+/* .jumbotron.banner{ */
+	/* height:300px; */
+/* } */
+
+/* .jumbotron-text{ */
+	/* font-size:15px; */
+/* } */
+/* .jumbotron p{ */
+	/* font-size:18px; */
+/* } */
+
+/********** 4.3 Mobile - Footer **********/
+footer{
+	position:absolute;
+}
+
+/********** Mobile - . Contact **********/
+
+.contact-text{
+	border:none;
+    padding: 30px 25px;
+	height:initial;
+	box-shadow: none;
+}
+
+.contact-text p
+{
+    color: #000 !important;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contact-img{
+	-webkit-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+		/*************  4.4 MOBILE - Panels *************/
+
+.panel{
+	margin-top:0;
+	margin-bottom:3%;
+}	
+
+.panel-kvaliteta{
+	border: 2px solid #0e600e;
+	margin-top:0;
+	margin-bottom:0;
+	height:100%;
+}
+
+.panel-kvaliteta .list-group{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+.panel-kvaliteta .listgroup h4{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.modal-dialog.modal-dialog-kva{
+  width:inherit;
+}
+
+section.top-space {
+	padding-bottom:15%;
+}
+#myMap{
+  display:none;
+}
+.scroll-box{
+width:100% !important;
+}
+}

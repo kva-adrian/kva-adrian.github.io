@@ -1,0 +1,73 @@
+{
+	"India" : [
+		{
+			"companyname" : "MicroSoft",
+			"companyaddress" : "ISB Road, Nanakrmaguda, Gachibowli, Hyderabad",
+			"Tel":  "040 2300 7204",
+			"Technology": "'Colloboration', 'Data Center', 'Enterprice Networking', 'Security'",
+			"Industry": "'Technical Services', 'Service Provider', 'Wholesale/Distribution'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 17.440081,
+			"longitude": 78.348915,
+			"color":"Green",
+			"title" : "MicroSoft"
+		},
+		{
+			"companyname" : "HoduSoft Pvt Ltd",
+			"companyaddress" : "232, Sarthik 2, Opp Rajpath Club, Bodakdev",
+			"Tel":  "079 4893 9393",
+			"Technology": "'Switching', 'Wireless', 'Security'",
+			"Industry": "'Technical Services', 'Service Provider', 'Hospitality'",
+			"imgpath":"partner_sd/hodusoft-logo.jpg",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 12.9159,
+			"longitude": 80.2299,
+			"color":"Green",
+			"title" : "HoduSoft Pvt Ltd"
+			
+		},
+		{
+			"companyname" : "SoftTech Pvt Ltd",
+			"companyaddress" : "243, Main road, Opp Rajpath Club, Bangalore",
+			"Tel":  "27828282828",
+			"Technology": "'Data Center', 'Enterprice Networking', 'Security'",
+			"Industry": "'Technical Services', 'Service Provider', 'Healthcare'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 12.840711,
+			"longitude": 77.676369,
+			"color":"Green",
+			"title" : "SoftTech Pvt Ltd"
+			
+		},
+		{
+			"companyname" : "Hindustan Pvt Ltd",
+			"companyaddress" : "453, East street, Opp Rajpath Club, Pune",
+			"Tel":  "042 2671 8767",
+			"Technology": "'Colloboration', 'Data Center', 'Enterprice Networking', 'Routing'",
+			"Industry": "'Education', 'Service Provider', 'Wholesale/Distribution'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",																														
+			"latitude": 8.524139,
+			"longitude": 76.936638,
+			"color":"Green",
+			"title" : "Hindustan Pvt Ltd"
+			
+		},
+		{
+			"companyname" : "infosys",
+			"companyaddress" : "541, Mount road, Rajpath Club, Chennai",
+			"Tel":  "182 4893 9393",
+			"Technology": "'Data Center', 'Enterprice Networking'",
+			"Industry": "'Technical Services', 'Service Provider', 'Wholesale/Distribution', 'Healthcare'",
+			"imgpath":"partner_sd/microsoft-logo.png",
+			"href":"https://www.kvaliteta.in",
+			"latitude": 18.516726,
+			"longitude": 73.856255,
+			"color":"Green",
+			"title" : "infosys"
+			
+		}
+	]
+}																																																																																																																																																																																																																																																																																																																																																																																																									

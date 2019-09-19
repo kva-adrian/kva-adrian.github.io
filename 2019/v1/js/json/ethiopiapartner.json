@@ -1,0 +1,71 @@
+{
+	"Ethiopia" : [
+		{
+			"companyname" : "National Marketers PLC",
+			"companyaddress" : "Addis Ababa, Ethiopia",
+			"Tel":  "+251 911202537",
+			"Technology": "'IT Infrastructure'",
+			"Industry": "'Government', 'Banking & Insurance', 'Service Provider'",
+			"imgpath":"partner_sd/nationalmarket.jpg",
+			"href":"https://www.national-marketers.com/",
+			"latitude": 9.038615,
+			"longitude": 38.756965,
+			"color":"Green",
+			"title" : "National Marketers PLC"
+		},
+		{
+			"companyname" : "DES Systems and Solution PLC",
+			"companyaddress" : "Palm bldg. 6th and 8th floors, CMC road, Addis Ababa, Ethiopia",
+			"Tel":  "+251 911634961",
+			"Technology": "'IT Infrastructure', 'Data Center', 'Consultancy Services',",
+			"Industry": "'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/dessystems.jpg",
+			"href":"http://desplc.com/",
+			"latitude": 9.021727,
+			"longitude": 38.832146,
+			"color":"Green",
+			"title" : "DES Systems and Solution PLC"
+		},
+		{
+			"companyname" : "SAT Import Trading PLC",
+			"companyaddress" : "Piassa Habte Giorgis Kelifa, Building / Subcity Arada, Wereda 01, House No: NEW/808A, Addis Ababa, Ethiopia",
+			"Tel":  "+251 912374290",
+			"Technology": "'IT Infrastructure'",
+			"Industry": "'Government', 'Enterprise'",
+			"imgpath":"partner_sd/satimport.jpg",
+			"href":"",
+			"latitude": 9.034020,
+			"longitude": 38.746193,
+			"color":"Green",
+			"title" : "SAT Import Trading PLC"
+		},
+		{
+			"companyname" : "Seed-IT",
+			"companyaddress" : "Addis Ababa, Ethiopia",
+			"Tel":  "+251 931735798",
+			"Technology": "'IT Infrastructure', 'Data Center'",
+			"Industry": "'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/seedit.jpg",
+			"href":"http://seedanti.com/",
+			"latitude": 9.014722,
+			"longitude": 38.780927,																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+			"color":"Green",
+			"title" : "Seed-IT"
+		},
+		{
+			"companyname" : "Zalatechs",
+			"companyaddress" : "Kidus Bldg 3rd Floor, Beside Friendship Hotel, Bole, Addis Ababa, Ethiopia",
+			"Tel":  "+251 911807090",
+			"Technology": "'IT Infrastructure', 'Collaboration'",
+			"Industry": "'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/zalatech.jpg",
+			"href":"https://zalatechs.com/",
+			"latitude": 8.994161,
+			"longitude": 38.784779,
+			"color":"Green",
+			"title" : "Seed-IT"
+		}
+
+		
+	]
+}

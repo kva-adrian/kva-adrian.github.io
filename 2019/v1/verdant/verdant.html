@@ -1,0 +1,91 @@
+<head>
+    <title>Verdant | Kvaliteta</title>
+</head>
+<section class="top-space" id="verdant">
+    <div class="row">
+        <div class="col-md-2" id="sidebar">
+            <ul class="nav nav-sidebar list-group" id="seriesTabs" role="tablist">
+                <li class="active"><a href="#intro" class="list-group-item" data-toggle="tab"
+                        aria-expanded="false">Verdant</a></li>
+                <!--CE5800 Series-->
+                <li><a href="verdant/CE5800-series.html" class="externalModal list-group-item " data-toggle="tab"
+                    data-target="#CE58-series" aria-expanded="false">CE5800</a></li>
+                <!--CE3700 Series-->
+                <li><a href="verdant/CE3700-series.html" class="externalModal list-group-item" data-toggle="tab"
+                    data-target="#CE37-series" aria-expanded="false">CE3700</a></li>
+                <!--FT Series-->
+                <li><a href="verdant/FT3700-series.html" class="externalModal list-group-item" data-toggle="tab"
+                    data-target="#FT37-series" aria-expanded="false">FT3700</a></li>
+
+            </ul>
+        </div>
+ <div class="col-sm-10">
+        <div class="tab-content">
+               
+            <div id="intro" class="tab-pane active">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h2>Introducing Verdant</h2>
+                    <p>Verdant is Kvaliteta's green technology CPE’s range.</p>
+                    <p>The equipment has rich connectivity and specialised applications which covers Passive WDM,
+                        Carrier Ethernet, Enterprise Ethernet Switches and GEPON products for FTTH/FTTB Applications.
+                        Verdant has a range of CPEs for VOIP, Wi-Fi, and Intelligence Access CPE’s with Edge Computing
+                        for vCPE and Security Applications. Verdant fully managed infrastructures seamlessly connect
+                        end-users, converged services, servers and storage across highly flexible core.</p>
+                    <p>Kvaliteta is a provider of network infrastructure solutions that enable Enterprise/Service
+                        Providers to ultimate networks performance and quality of service with product family.
+                    </p>
+                </div>
+                <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                    <a href="#" data-toggle="modal" data-target="#myModal"><img class="img-responsive"
+                            src="images/verdant/verdant_intro.jpg" /></a>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-dialog-kva" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <img class="img-responsive" src="images/verdant/verdant_intro.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="CE58-series" role="tabpanel">
+                </div>
+            <div class="tab-pane" id="CE37-series" role="tabpanel">
+                </div>
+            <div class="tab-pane" id="FT37-series" role="tabpanel">
+                </div>
+                <!--./ftseries tab-pane-->
+            </div>
+        </div>
+        <!--/.tab-content-->
+
+    </div>
+</section>
+
+<script>
+$('[data-toggle="tab"]').click(function(e) {
+    var $this = $(this),
+        loadurl = $this.attr('href'),
+        targ = $this.attr('data-target');
+
+    $.get(loadurl, function(data) {
+        $(targ).html(data);
+    });
+
+    $this.tab('show');
+    return false;
+});
+</script>
+<script>
+        $(".carousel").hover(function () {
+            $(this).find(".caption-slide").slideDown(500); //.fadeIn(250)
+        }, function () {
+            $(this).find(".caption-slide").slideUp(300); //.fadeOut(205)
+        });
+    </script>

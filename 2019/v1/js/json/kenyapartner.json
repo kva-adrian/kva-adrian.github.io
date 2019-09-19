@@ -1,0 +1,31 @@
+{
+	"Kenya" : [
+		{
+			"companyname" : "Ubora Systems and Solutions Limited",
+			"companyaddress" : "Mitsumi Business Park 10th Floor, P.O Box 58666 - 00100, Muthithi Road, Nairobi",
+			"Tel":  "+254 777343102",
+			"Technology": "'Solution Provider - Software', 'Security', 'Solution Provider - Hardware'",
+			"Industry": "'Telecom', 'Enterprise', 'Government', 'Banking & Insurance'",
+			"imgpath":"partner_sd/ubora.jpg",
+			"href":"https://www.ubora.co.ke",
+			"latitude": -1.269824,
+			"longitude": 38.811155,
+			"color":"Green",
+			"title" : "Ubora Systems and Solutions Limited"
+		},
+		{
+			"companyname" : "Mayreal Technologies",
+			"companyaddress" : "Nairobi",
+			"Tel":  "+254 722377349",
+			"Technology": "'Security', 'Solution Provider - Software', 'Solution Provider - Hardware'",
+			"Industry": "'Enterprise'",
+			"imgpath":"partner_sd/mayrealtech.jpg",
+			"href":"",
+			"latitude": -1.292835,
+			"longitude": 36.820734,
+			"color":"Green",
+			"title" : "Mayreal Technologies"
+		}
+		
+	]
+}

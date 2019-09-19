@@ -1,0 +1,197 @@
+<head>
+	<title>Service Deliver Partners | Kvaliteta</title>
+</head>
+<!--Service Delivery Partners-->
+<section class="top-space" id="serviceDeliveryPartners">
+	<!-- SERVICE DELIVERY PARTNERS SEARCHBAR-->
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>SERVICE DELIVERY PARTNERS</h2>
+		</div>
+	</div>
+	<!-- SERVICE DELIVERY PARTNERS CONTENT-->
+	<div class="row">
+		<div class="form-group col-xs-12 col-sm-12 col-md-4">
+			<select id="country" class="form-control mydrop" name="country" onchange="GetMap()" required>
+				<option value="Select">Select Country*</option>
+				<option value="Kenya">Kenya</option>
+				<option value="Rwanda">Rwanda</option>
+				<option value="Ethiopia">Ethiopia</option>
+				<option value="Tanzania">Tanzania</option>
+				<option value="Nigeria">Nigeria</option>
+			</select>
+		</div>
+		<!--END LOCATION INPUT-->
+		<div class="form-group col-xs-12 col-sm-12 col-md-3">
+			<select id="technology" class="form-control mydrop" name="technology">
+				<option value="Select">Select Technology</option>
+				<option value="Collaboration">Collaboration</option>
+				<option value="IT Infra">IT Infrastruture</option>
+				<option value="Data Center">Data Center</option>
+				<option value="Enterprise Networking">Enterprise Networking</option>
+				<option value="Internet of Things">Internet of Things</option>
+				<option value="Security">Security</option>
+				<option value="Consultancy Services">Consultancy Services</option>
+				<option value="Specialized Services">Specialized Services</option>
+				<option value="Software Automation">Software Automation</option>
+				<option value="Hardware Automation">Hardware Automation</option>
+				<option value="Software Development">Software Development</option>
+				<option value="Solution Provider - Software">Solution Provider - Software</option>
+				<option value="Solution Provider - Hardware">Solution Provider - Hardware</option>
+				<option value="Wired & Wireless">Wired & Wireless</option>
+			</select>
+		</div>
+		<!--END Technology INPUT-->
+		<!--START Industry INPUT-->
+		<div class="form-group col-xs-12 col-sm-12 col-md-3">
+			<select id="industry" class="form-control mydrop" name="industry">
+				<option value="Select">Select Industry</option>
+				<option value="Education">Education</option>
+				<option value="Government">Government</option>
+				<option value="Banking & Insurance">Banking & Insurance</option>
+				<option value="Telecom">Telecom</option>
+				<option value="Enterprise">Enterprise</option>
+				<option value="SME">SME</option>
+				<option value="Finance">Finance</option>
+				<option value="Healthcare">Healthcare</option>
+				<option value="Hospitality">Hospitality</option>
+				<option value="Manufacturing">Manufacturing</option>
+				<option value="Retail">Retail</option>
+				<option value="Service Provider">Service Provider</option>
+				<option value="Technical Services">Technical Services</option>
+				<option value="Wholesale/Distribution">Wholesale/Distribution</option>
+			</select>
+		</div>
+		<!--END Industry INPUT-->
+		<div class="form-group col-xs-12 col-sm-12 col-md-2">
+			<a class="btn btn-primary btn-md btn-block " href="#partners_joinUs" data-toggle="modal"
+				data-target="#myModal2">BECOME A PARTNER</a>
+		</div>
+		<!-- <a href="#" class="btn btn-primary" style="border-radius: 25px; padding: 10px 20px !important;">Search</a> -->
+		<!-- <button type="submit" class="btn btn-primary search has-spinner" id="search" data-btn-text="search">Search</button> -->
+
+		<!-- <button type="submit" class="btn btn-primary search has-spinner" id="search" data-btn-text="search" data-toggle="modal" data-target="#myModal">Search</button> -->
+	</div>
+	<!--END Partner Button-->
+	<!--START Result Display-->
+	<div class="row">
+		<!-- Company information  Display Area-->
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="scroll-box" id="result"></div>
+		</div>
+		<!--Map Display Area-->
+		<div id="myMap" class="col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+			<div id="bingmap" class="bingmag1" style="width: 100%; height: 400px;"></div>
+		</div>
+		<!--Temporary Message at start-->
+		<div class="col-md-12" id="tempbox">
+			<p><br /><br />Here you can search for our Service Delivery Partners.</p>
+
+		</div>
+	</div>
+	<!--END Result Display-->
+
+	<!--Become a Partner Form-->
+	<!-- Modal -->
+	<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel2">Become a Partner</h4>
+				</div>
+				<div class="modal-body">
+						<p>Please fill out the form below & complete all the fields.</p>
+					<form method="post" action="" enctype="text/plain">
+						<div class="form-group">
+							<input type="text" class="form-control" id="firstName" Name="First Name"
+								placeholder="First Name" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="lastName" Name="Last Name"
+								placeholder="Last Name" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="Company" Name="Company" placeholder="Company"
+								required>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="usermail" Name="MailId"
+								placeholder="E-mail Address" required>
+						</div>
+						<div class="form-group">
+							<input type="test" class="form-control" id="businessNo" Name="businessNo"
+								placeholder="Business Phone" required>
+						</div>
+						
+						<div class="form-group">
+							<input type="text" class="form-control" id="JobTitle" Name="JobTitle"
+								placeholder="Job Title" required>
+						</div>
+						<div class="form-group">
+							<select class="form-control" id="Job Dept" Name="Job Dept"
+								required>
+								<option value="">Job Department*</option>
+								<option value="Accounting/Finance">Accounting/Finance</option>
+								<option value="Administration">Administration</option>
+								<option value="Advanced Analytics/Business Intelligence">Advanced Analytics/Business
+									Intelligence</option>
+								<option value="Agency/Program Management">Agency/Program Management</option>
+								<option value="Business Process Outsourcing/Shared Services">Business Process
+									Outsourcing/Shared Services</option>
+								<option value="Compliance">Compliance</option>
+								<option value="Consulting">Consulting</option>
+								<option value="Customer Service/Call Center">Customer Service/Call Center</option>
+								<option value="Engineer">Engineer</option>
+								<option value="Executive/Officer">Executive/Officer</option>
+								<option value="Information Technology">Information Technology</option>
+								<option value="Legal">Legal</option>
+								<option value="Marketing">Marketing</option>
+								<option value="Operations">Operations</option>
+								<option value="Other">Other</option>
+								<option value="Owner/Proprietor">Owner/Proprietor</option>
+								<option value="Project Management">Project Management</option>
+								<option value="Records Management">Records Management</option>
+								<option value="Research &amp; Development">Research &amp; Development</option>
+								<option value="Sales Operations">Sales Operations</option>
+								<option value="Supply Chain">Supply Chain</option>
+								<option value="System Integrator">System Integrator</option>
+								</select>
+						</div>
+						<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+					</form>
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- modal -->
+
+</section>
+<script src="js/jquery.min.js"></script>
+<!--jQuery 1.11.3 required for displaying search results-->
+<!-- <script src="js/default.js"></script> -->
+<script src="js/partneronchange.js"></script>
+<!-- <script src="js/partnerser.js"></script> -->
+
+<script type="text/javascript">
+	var infobox;
+	var map;
+	function GetMap() {
+		map = new Microsoft.Maps.Map('#bingmap', {
+			zoom: 8
+		});
+
+		//Create window infobox in the middle of pin (not displayed)
+		infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
+			visible: false
+		});
+		//Assign infobox on variable map
+		infobox.setMap(map);
+
+	}
+</script>
+<script type='text/javascript'
+	src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ArG4NuLwgv_SRSx88GsQGzIX5NOrqfnI-Iiif6ZdcwdjNnd_dEEbNEmaRpodXdnS'
+	async defer>
+	</script>
