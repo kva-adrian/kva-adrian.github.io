@@ -1100,7 +1100,7 @@ body {
   }
   .navbar-default .navbar-nav .dropdown-menu > li > a {
     color: #000;
-    background-color: #fff;
+    background-color: #ccc;
     border-radius: 4px;
     margin-top: 2px;   
   }
@@ -1127,7 +1127,7 @@ body {
       padding-left: 30px;
    }
    li.dropdown.open {
-    border: 0px solid red;
+    border: 0px solid #ccc;
    }
   
 
