@@ -12,22 +12,32 @@
 		content="Welcome to the Kvaliteta, entry point to information about our products, business solutions and consulting services including IT strategy, Architecture Design, Integration Framework, Implementation and Management of large-scale Systems for both Enterprise and Government.">
 	<link rel="icon" href="images/logo-solo-q.png">
 
+
 	<!-- Bootstrap core CSS -->
 	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font Awesome 5.5 -->
-	<link rel="stylesheet" href="external/fontawesome5.5.0/css/all.css">
-
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<link href="css/kva_style.css" rel="stylesheet">
+	<!-- Font Awesome 5.5 -->
+	<link rel="stylesheet" href="external/fontawesome5.5.0/css/all.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<![endif]-->
+	<!-- Custom styles for this template -->
+	<link href="css/kva_style.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31551455-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31551455-1');
+</script>
 </head>
 
 <body>
@@ -113,10 +123,8 @@
 						</li>
 						<!--SDAAS DROPDOWN-->
 						<li class="dropdown" id="sdaasmenu">
-							<a href="#sdaas/intro" class="dropdown-toggle disabled hidden-xs"
-								data-toggle="dropdown">SDAAS <b class="caret"></b></a>
-							<a class="visible-xs" href="#sdaas/intro">SDAAS</a><a
-								class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i
+							<a class="dropdown-toggle" href="#sdaas/intro">SDAAS<b class="caret hidden-xs"></b></a>
+							<a class="dropdown-toggle pull-right hidden-md hidden-lg" data-toggle="dropdown"><i
 									class="fas fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#sdaas/kite">KITE FRAMEWORK</a></li>
@@ -126,36 +134,31 @@
 						</li>
 						<!--ENT-IT DROPDOWN-->
 						<li class="dropdown" id="entitmenu">
-							<a href="#enterprise/ent-it" class="dropdown-toggle disabled hidden-xs"
-								data-toggle="dropdown">ENTERPRISE-IT <b class="caret"></b></a>
-							<a class="visible-xs" href="#enterprise/ent-it">ENTERPRISE-IT</a><a
-								class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i
-									class="fas fa-angle-down"></i></a>
+								<a class="dropdown-toggle" href="#enterprise/ent-it">ENTERPRISE-IT<b class="caret hidden-xs"></b></a>
+								<a class="dropdown-toggle pull-right hidden-md hidden-lg" data-toggle="dropdown"><i
+										class="fas fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#enterprise/cloud">CLOUD</a></li>
 								<li><a href="#enterprise/sre">SRE</a></li>
 								<li><a href="#enterprise/dcim">DCIM</a></li>
-								<li><a href="#enterprise/connected_workspace">CONNECTED<br />WORKSPACE</a></li>
+								<li><a href="#enterprise/connected_workspace">CONNECTED WORKSPACE</a></li>
 								<li><a href="#enterprise/services">SERVICES</a></li>
 							</ul>
 						</li>
 						<!--SP-IT DROPDOWN-->
 						<li class="dropdown" id="spitmenu">
-							<a href="#sp-it/serviceprovider" class="dropdown-toggle disabled hidden-xs"
-								data-toggle="dropdown">SERVICE PROVIDER-IT <b class="caret"></b></a>
-							<a class="visible-xs" href="#sp-it/serviceprovider">SERVICE PROVIDER-IT</a><a
-								class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i
-									class="fas fa-angle-down"></i></a>
+								<a class="dropdown-toggle" href="#sp-it/serviceprovider">SERVICE PROVIDER-IT<b class="caret hidden-xs"></b></a>
+								<a class="dropdown-toggle pull-right hidden-md hidden-lg" data-toggle="dropdown"><i
+										class="fas fa-angle-down"></i></a>
+							
 							<ul class="dropdown-menu">
 								<li><a href="#verdant/verdant">VERDANT</a></li>
 							</ul>
 						</li>
 						<!--PARTNERING DROPDOWN-->
 						<li class="dropdown" id="partneringmenu">
-							<a href="#partnering/model" class="dropdown-toggle disabled hidden-xs"
-								data-toggle="dropdown">PARTNERING <b class="caret"></b></a>
-							<a href="#partnering/model" class="visible-xs">PARTNERING</a><a
-								class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i
+							<a class="dropdown-toggle" href="#partnering/model">PARTNERING<b class="caret hidden-xs"></b></a>
+							<a class="dropdown-toggle pull-right hidden-md hidden-lg" data-toggle="dropdown"><i
 									class="fas fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#partnering/our_partners">ODM/OEM PARTNERS</a></li>
@@ -164,12 +167,9 @@
 						</li>
 						<!--ABOUT US DROPDOWN-->
 						<li class="dropdown" id="aboutmenu">
-							<a href="#about/we-are" class="dropdown-toggle disabled hidden-xs"
-								data-toggle="dropdown">ABOUT US
-								<b class="caret"></b></a>
-							<a href="#about/we-are" class="visible-xs">ABOUT US</a><a
-								class="dropdown-toggle pull-right visible-xs" data-toggle="dropdown"><i
-									class="fas fa-angle-down"></i></a>
+								<a class="dropdown-toggle" href="#about/we-are">ABOUT US<b class="caret hidden-xs"></b></a>
+								<a class="dropdown-toggle pull-right hidden-md hidden-lg" data-toggle="dropdown"><i
+										class="fas fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#about/industrysolutions">INDUSTRY SOLUTIONS</a></li>
 								<li><a href="#about/technologyareas">TECHNOLOGY AREAS</a></li>
@@ -215,14 +215,13 @@
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script type="text/javascript" src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
-	<script type="text/javascript" src="external/jquery.maphilight.min.js"></script>
-	<script type="text/javascript" src="external/image-map-resizer/js/imageMapResizer.min.js"></script>
-	<script type="text/javascript" src="js/kva_style.js"></script>
+	
+	
 	<script type="text/javascript" src="js/kva_nav.js"></script>
+	<script type="text/javascript" src="js/kva_style.js"></script>
 
-
-
-
+	<script type="text/javascript" src="external/image-map-resizer/js/imageMapResizer.min.js"></script>
+	<script type="text/javascript" src="external/jquery.maphilight.min.js"></script>
 </body>
 
 </html>

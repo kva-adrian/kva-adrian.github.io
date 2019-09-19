@@ -1095,6 +1095,9 @@ body {
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #0e600e;
   }
+  .navbar ul.nav li a {
+    display:inline-block !important;
+  }
   .navbar-default .navbar-nav .dropdown-menu > li > a {
     color: #000;
     background-color: #fff;
@@ -1113,6 +1116,7 @@ body {
      border-bottom: 1px solid white; 
      border-radius: 0;
    }
+   
   .dropdown-menu {
       padding-left: 10px;
   }
@@ -1125,10 +1129,7 @@ body {
    li.dropdown.open {
     border: 0px solid red;
    }
-   
-   .navbar ul.nav li a.visible-xs{
-	   display:inline-block !important;
-   }
+  
 
 /*************  4. Mobile - Content *************/
 
